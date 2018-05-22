@@ -2,7 +2,7 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "undefined" ],
-    "baseIris" : [ "http://purl.org/vocab/vann", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/owl/owlapi/turtle" ],
+    "baseIris" : [ "http://purl.org/vocab/vann", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/db/nosql", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
     "title" : {
       "en" : "Vocabulary about NOSQL stores"
     },
@@ -28,16 +28,16 @@
         "value" : "http://mohamednadjibmami.com/me",
         "type" : "label"
       } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "http://mohamednadjibmami.com/me",
-        "type" : "iri"
-      } ],
       "created" : [ {
         "identifier" : "created",
         "language" : "undefined",
         "value" : "2017-12-15T17:00:00",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "nosql",
         "type" : "label"
       } ],
       "rights" : [ {
@@ -45,12 +45,6 @@
         "language" : "undefined",
         "value" : "http://creativecommons.org/licenses/by-nc-sa/3.0/",
         "type" : "iri"
-      } ],
-      "preferredNamespacePrefix" : [ {
-        "identifier" : "preferredNamespacePrefix",
-        "language" : "undefined",
-        "value" : "nosql",
-        "type" : "label"
       } ],
       "publisher" : [ {
         "identifier" : "publisher",
@@ -86,517 +80,467 @@
     "individualCount" : 0
   },
   "class" : [ {
-    "id" : "3",
+    "id" : "0",
     "type" : "owl:Class"
   }, {
     "id" : "5",
     "type" : "owl:Class"
   }, {
     "id" : "6",
-    "type" : "owl:Class"
-  }, {
-    "id" : "8",
-    "type" : "owl:Class"
-  }, {
-    "id" : "9",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "12",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "14",
-    "type" : "owl:Class"
-  }, {
-    "id" : "16",
-    "type" : "owl:Class"
-  }, {
-    "id" : "32",
-    "type" : "owl:Class"
-  }, {
-    "id" : "35",
-    "type" : "owl:Class"
-  }, {
-    "id" : "43",
-    "type" : "owl:Class"
-  }, {
-    "id" : "44",
-    "type" : "owl:Class"
-  }, {
-    "id" : "46",
-    "type" : "owl:Class"
-  }, {
-    "id" : "47",
-    "type" : "owl:Class"
-  }, {
-    "id" : "48",
-    "type" : "owl:Class"
-  }, {
-    "id" : "40",
-    "type" : "owl:Class"
-  }, {
-    "id" : "49",
-    "type" : "owl:Class"
-  }, {
-    "id" : "50",
-    "type" : "owl:Class"
-  }, {
-    "id" : "51",
-    "type" : "owl:Class"
-  }, {
-    "id" : "42",
-    "type" : "owl:Class"
-  }, {
-    "id" : "28",
-    "type" : "owl:Class"
-  }, {
-    "id" : "53",
-    "type" : "owl:Class"
-  }, {
-    "id" : "73",
-    "type" : "owl:Class"
-  }, {
-    "id" : "76",
-    "type" : "owl:Class"
-  }, {
-    "id" : "77",
     "type" : "owl:Class"
   }, {
     "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "78",
+    "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "79",
-    "type" : "owl:Class"
-  }, {
-    "id" : "89",
-    "type" : "owl:Class"
-  }, {
-    "id" : "33",
-    "type" : "owl:Class"
-  }, {
-    "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "105",
-    "type" : "owl:Class"
-  }, {
-    "id" : "95",
-    "type" : "owl:Class"
-  }, {
-    "id" : "102",
-    "type" : "owl:Class"
-  }, {
-    "id" : "62",
-    "type" : "owl:Class"
-  }, {
-    "id" : "112",
-    "type" : "owl:Class"
-  }, {
-    "id" : "56",
-    "type" : "owl:Class"
-  }, {
-    "id" : "115",
-    "type" : "owl:Class"
-  }, {
-    "id" : "92",
-    "type" : "owl:Class"
-  }, {
-    "id" : "24",
-    "type" : "owl:Class"
-  }, {
-    "id" : "124",
-    "type" : "owl:Class"
-  }, {
-    "id" : "39",
-    "type" : "owl:Class"
-  }, {
-    "id" : "126",
-    "type" : "owl:Class"
-  }, {
-    "id" : "20",
-    "type" : "owl:Class"
-  }, {
-    "id" : "70",
-    "type" : "owl:Class"
-  }, {
-    "id" : "129",
-    "type" : "owl:Class"
-  }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "118",
-    "type" : "owl:Class"
-  }, {
-    "id" : "133",
-    "type" : "owl:Class"
-  }, {
-    "id" : "22",
-    "type" : "owl:Class"
-  }, {
-    "id" : "140",
-    "type" : "owl:Class"
-  }, {
-    "id" : "31",
-    "type" : "owl:Class"
-  }, {
-    "id" : "54",
+    "id" : "10",
     "type" : "owl:Class"
   }, {
     "id" : "11",
     "type" : "owl:Class"
   }, {
-    "id" : "101",
-    "type" : "owl:Class"
-  }, {
-    "id" : "104",
-    "type" : "owl:Class"
-  }, {
-    "id" : "2",
-    "type" : "owl:Class"
-  }, {
-    "id" : "81",
-    "type" : "owl:Class"
-  }, {
-    "id" : "83",
-    "type" : "owl:Class"
-  }, {
-    "id" : "96",
-    "type" : "owl:Class"
-  }, {
-    "id" : "67",
-    "type" : "owl:Class"
-  }, {
     "id" : "13",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "103",
     "type" : "owl:Class"
   }, {
-    "id" : "143",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "149",
+    "id" : "19",
     "type" : "owl:Class"
   }, {
-    "id" : "64",
+    "id" : "20",
     "type" : "owl:Class"
   }, {
-    "id" : "109",
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
     "type" : "owl:Class"
   }, {
     "id" : "45",
     "type" : "owl:Class"
   }, {
-    "id" : "99",
+    "id" : "24",
     "type" : "owl:Class"
   }, {
-    "id" : "26",
+    "id" : "54",
     "type" : "owl:Class"
   }, {
-    "id" : "100",
+    "id" : "50",
     "type" : "owl:Class"
   }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "75",
-    "type" : "owl:Class"
-  }, {
-    "id" : "98",
-    "type" : "owl:Class"
-  }, {
-    "id" : "60",
+    "id" : "71",
     "type" : "owl:Class"
   }, {
     "id" : "37",
     "type" : "owl:Class"
   }, {
-    "id" : "17",
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "132",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "138",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "136",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "128",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Voldemort",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "iri" : "http://purl.org/db/nosql#Druid",
+    "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Voldemort"
+      "IRI-based" : "Druid"
     },
-    "attributes" : [ "external" ],
-    "id" : "3",
-    "superClasses" : [ "4" ]
+    "id" : "0",
+    "superClasses" : [ "1" ]
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Redis",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "iri" : "http://purl.org/db/nosql#Chouchbase",
+    "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Redis"
+      "IRI-based" : "Chouchbase"
     },
-    "attributes" : [ "external" ],
     "id" : "5",
     "superClasses" : [ "4" ]
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#BASE",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "iri" : "http://purl.org/db/nosql#Scylla",
+    "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "BASE"
+      "IRI-based" : "Scylla"
     },
-    "comment" : {
-      "en" : "A set of four properties: Basically Available, Soft state, Eventual consistency, that are commonly found in distributed NOSQL stores, as apposed to ACID in relational databases. Data added might not be ready for query everywhere, but will eventually be, and hence a system state is in constant change."
-    },
-    "attributes" : [ "external" ],
     "id" : "6",
-    "superClasses" : [ "7" ]
+    "superClasses" : [ "1" ]
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Cluster",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "iri" : "http://purl.org/db/nosql#Elassandra",
+    "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Cluster"
+      "IRI-based" : "Elassandra"
     },
-    "comment" : {
-      "en" : "A group of physical or virtual computing machines."
-    },
-    "attributes" : [ "external" ],
-    "id" : "8"
+    "id" : "7",
+    "superClasses" : [ "1" ]
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#RethinkDB",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "RethinkDB"
-    },
-    "attributes" : [ "external" ],
-    "id" : "9",
-    "superClasses" : [ "2" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Collection",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Collection"
-    },
-    "attributes" : [ "external" ],
-    "id" : "10",
-    "superClasses" : [ "11" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#NonRelationalDB",
-    "equivalent" : [ "13" ],
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "NonRelationalDB"
-    },
-    "comment" : {
-      "en" : "A non-relation database, is a database that is designed around other models than the relational model. Used interchangbly with NOSQL database or store."
-    },
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "12"
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Neo4j",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Neo4j"
-    },
-    "attributes" : [ "external" ],
-    "id" : "14",
-    "superClasses" : [ "15" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#CQL",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "CQL"
-    },
-    "comment" : {
-      "en" : "Cassandra Query Language, query language (SQL-like) used to interact with a Cassandra database."
-    },
-    "attributes" : [ "external" ],
-    "id" : "16",
-    "superClasses" : [ "17" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#OrientDB",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "OrientDB"
-    },
-    "attributes" : [ "external" ],
-    "id" : "32",
-    "superClasses" : [ "33", "4", "2", "15" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#ACID",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ACID"
-    },
-    "comment" : {
-      "en" : "In a database, ACID are four properties: Atomicity, Consistency, Isolation, and Durability, that ensure that transactions, failed or succeded, leave the data in a valid and consistent state."
-    },
-    "attributes" : [ "external" ],
-    "id" : "35",
-    "superClasses" : [ "7" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Graph_Engine",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Graph_Engine"
-    },
-    "attributes" : [ "external" ],
-    "id" : "43",
-    "superClasses" : [ "15" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Hypertable",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Hypertable"
-    },
-    "attributes" : [ "external" ],
-    "id" : "44",
-    "superClasses" : [ "45" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#AllegroGraph",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "AllegroGraph"
-    },
-    "attributes" : [ "external" ],
-    "id" : "46",
-    "superClasses" : [ "15" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Scalaris",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Scalaris"
-    },
-    "attributes" : [ "external" ],
-    "id" : "47",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Riak",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Riak"
-    },
-    "attributes" : [ "external" ],
-    "id" : "48",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#View",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "View"
-    },
-    "subClasses" : [ "42", "39" ],
-    "attributes" : [ "external" ],
-    "id" : "40"
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Blazegraph",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Blazegraph"
-    },
-    "attributes" : [ "external" ],
-    "id" : "49",
-    "superClasses" : [ "15" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#upscaledb",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "upscaledb"
-    },
-    "attributes" : [ "external" ],
-    "id" : "50",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Dgraph",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Dgraph"
-    },
-    "attributes" : [ "external" ],
-    "id" : "51",
-    "superClasses" : [ "15" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#MaterializedView",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MaterializedView"
-    },
-    "attributes" : [ "external" ],
-    "id" : "42",
-    "superClasses" : [ "40" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Table",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Table"
-    },
-    "attributes" : [ "external" ],
-    "id" : "28",
-    "superClasses" : [ "11" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#ObjectID",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ObjectID"
-    },
-    "attributes" : [ "external" ],
-    "id" : "53",
-    "superClasses" : [ "54" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#MonetDB",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MonetDB"
-    },
-    "attributes" : [ "external" ],
-    "id" : "73",
-    "superClasses" : [ "45" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Tarantool",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "iri" : "http://purl.org/db/nosql#Tarantool",
+    "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Tarantool"
     },
-    "attributes" : [ "external" ],
-    "id" : "76",
-    "superClasses" : [ "4" ]
+    "id" : "8",
+    "superClasses" : [ "9" ]
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#HQL",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "iri" : "http://purl.org/db/nosql#c-treeACE",
+    "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "HQL"
+      "IRI-based" : "c-treeACE"
+    },
+    "id" : "10",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Table",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Table"
+    },
+    "id" : "11",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#InfiniteGraph",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InfiniteGraph"
+    },
+    "id" : "13",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#JanusGraph",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "JanusGraph"
+    },
+    "id" : "19",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#DynamoDB",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DynamoDB"
+    },
+    "id" : "20",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Cypher",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cypher"
     },
     "comment" : {
-      "en" : "Hypertable Query Language, query language (SQL-like) used to interact with a Hypertable database."
+      "en" : "Query language used to intereact with a Neo4j database."
     },
-    "attributes" : [ "external" ],
-    "id" : "77",
-    "superClasses" : [ "17" ]
+    "id" : "21",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Berkeley_DB",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Berkeley_DB"
+    },
+    "id" : "30",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Document",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Document"
+    },
+    "subClasses" : [ "36", "37", "35", "38", "39", "29", "24", "5", "32", "18", "16", "3", "40", "41" ],
+    "comment" : {
+      "en" : "Document store stores data in form of documents, like under JSOB/BSON formats."
+    },
+    "id" : "4",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Graph",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Graph"
+    },
+    "subClasses" : [ "37", "45", "46", "47", "35", "48", "32", "49", "50", "51", "13", "52", "19", "53" ],
+    "comment" : {
+      "en" : "Graph store stores highly interconnected data, in form of graphs."
+    },
+    "id" : "14",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#DSE_Graph",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DSE_Graph"
+    },
+    "id" : "45",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#MarkLogic",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MarkLogic"
+    },
+    "id" : "24",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Primary_key",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Primary_key"
+    },
+    "id" : "54",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Graph_Engine",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Graph_Engine"
+    },
+    "id" : "50",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#HBase",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HBase"
+    },
+    "id" : "71",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#OrientDB",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OrientDB"
+    },
+    "id" : "37",
+    "superClasses" : [ "14", "9", "76", "4" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#RethinkDB",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RethinkDB"
+    },
+    "id" : "39",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Neo4j",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Neo4j"
+    },
+    "id" : "48",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Collection",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Collection"
+    },
+    "id" : "79",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#MaterializedView",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaterializedView"
+    },
+    "id" : "81",
+    "superClasses" : [ "82" ]
   }, {
     "iri" : "http://purl.org/vocab/vann/Properties",
     "baseIri" : "http://purl.org/vocab/vann",
@@ -604,104 +548,117 @@
     "label" : {
       "IRI-based" : "Properties"
     },
-    "subClasses" : [ "6", "35" ],
+    "subClasses" : [ "83", "84" ],
     "attributes" : [ "external" ],
-    "id" : "7"
+    "id" : "27"
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Elassandra",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "iri" : "http://purl.org/db/nosql#KeyValue",
+    "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Elassandra"
+      "IRI-based" : "KeyValue"
     },
-    "attributes" : [ "external" ],
-    "id" : "78",
-    "superClasses" : [ "45" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#RavenDB",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "RavenDB"
-    },
-    "attributes" : [ "external" ],
-    "id" : "79",
-    "superClasses" : [ "2" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Chouchbase",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Chouchbase"
-    },
-    "attributes" : [ "external" ],
-    "id" : "89",
-    "superClasses" : [ "2" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Multi-model",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Multi-model"
-    },
-    "subClasses" : [ "24", "22", "32" ],
-    "attributes" : [ "external" ],
-    "id" : "33",
-    "superClasses" : [ "13" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Graph",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Graph"
-    },
-    "subClasses" : [ "24", "43", "99", "22", "100", "46", "14", "101", "102", "103", "104", "49", "51", "32" ],
+    "subClasses" : [ "85", "37", "35", "32", "86", "87", "88", "8", "10", "89", "20", "90", "91", "30" ],
     "comment" : {
-      "en" : "Graph store stores highly interconnected data, in form of graphs."
+      "en" : "Key-value store stores data in form of long key,value maps."
     },
-    "attributes" : [ "external" ],
-    "id" : "15",
-    "superClasses" : [ "13" ]
+    "id" : "9",
+    "superClasses" : [ "26" ]
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Accumulo",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "iri" : "http://purl.org/db/nosql#Attribute",
+    "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Accumulo"
+      "IRI-based" : "Attribute"
     },
-    "attributes" : [ "external" ],
-    "id" : "105",
-    "superClasses" : [ "45" ]
+    "comment" : {
+      "en" : "A term that groups all concepts used by different databases to characterize a particular datum stored in it, e.g., column in  Cassandra, field in MongoDB"
+    },
+    "id" : "92"
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#SecondaryIndex",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "iri" : "http://purl.org/db/nosql#Dgraph",
+    "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "SecondaryIndex"
+      "IRI-based" : "Dgraph"
     },
-    "attributes" : [ "external" ],
-    "id" : "95",
-    "superClasses" : [ "96" ]
+    "id" : "51",
+    "superClasses" : [ "14" ]
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Sparksee",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "iri" : "http://purl.org/db/nosql#NonRelationalDB",
+    "equivalent" : [ "26" ],
+    "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Sparksee"
+      "IRI-based" : "NonRelationalDB"
     },
-    "attributes" : [ "external" ],
-    "id" : "102",
-    "superClasses" : [ "15" ]
+    "comment" : {
+      "en" : "A non-relation database, is a database that is designed around other models than the relational model. Used interchangbly with NOSQL database or store."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "96"
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#c-treeACE",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "iri" : "http://purl.org/db/nosql#HypergraphDB",
+    "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "c-treeACE"
+      "IRI-based" : "HypergraphDB"
     },
-    "attributes" : [ "external" ],
-    "id" : "62",
-    "superClasses" : [ "4" ]
+    "id" : "46",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Hypertable",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hypertable"
+    },
+    "id" : "108",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#CQL",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CQL"
+    },
+    "comment" : {
+      "en" : "Cassandra Query Language, query language (SQL-like) used to interact with a Cassandra database."
+    },
+    "id" : "66",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#SimpleDB",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SimpleDB"
+    },
+    "id" : "111",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Trinity",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Trinity"
+    },
+    "id" : "52",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Store",
+    "equivalent" : [ "96" ],
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Store"
+    },
+    "subClasses" : [ "14", "9", "1", "76", "4" ],
+    "comment" : {
+      "en" : "Only SQL, NOSQL stores are databases designed around other models than the traditional relational database. It has five categories: Key-value, document, columnar, graph and multi-model."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "26"
   }, {
     "iri" : "http://purl.org/vocab/vann/N1QL",
     "baseIri" : "http://purl.org/vocab/vann",
@@ -713,101 +670,350 @@
       "undefined" : "Query language (SQL-like) used to interact with a Couchbase database."
     },
     "attributes" : [ "external" ],
-    "id" : "112",
-    "superClasses" : [ "17" ]
+    "id" : "60",
+    "superClasses" : [ "22" ]
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Primary_key",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Primary_key"
-    },
-    "attributes" : [ "external" ],
-    "id" : "56",
-    "superClasses" : [ "54" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#DocumentDB",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "DocumentDB"
-    },
-    "attributes" : [ "external" ],
-    "id" : "115",
-    "superClasses" : [ "2" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#MongoDB",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MongoDB"
-    },
-    "attributes" : [ "external" ],
-    "id" : "92",
-    "superClasses" : [ "2" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#ArangoDB",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ArangoDB"
-    },
-    "attributes" : [ "external" ],
-    "id" : "24",
-    "superClasses" : [ "4", "33", "2", "15" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Memcached",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Memcached"
-    },
-    "attributes" : [ "external" ],
-    "id" : "124",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#GlobalSecondaryIndex",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "iri" : "http://purl.org/db/nosql#GlobalSecondaryIndex",
+    "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
       "IRI-based" : "GlobalSecondaryIndex"
     },
-    "attributes" : [ "external" ],
-    "id" : "39",
-    "superClasses" : [ "40" ]
+    "id" : "118",
+    "superClasses" : [ "82" ]
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#HBase",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "iri" : "http://purl.org/db/nosql#Columnar",
+    "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "HBase"
+      "IRI-based" : "Columnar"
     },
-    "attributes" : [ "external" ],
-    "id" : "126",
-    "superClasses" : [ "45" ]
+    "subClasses" : [ "0", "111", "108", "127", "128", "32", "129", "6", "7", "71", "73" ],
+    "comment" : {
+      "en" : "Columnar or column-based store organises data virtually around rows, but stores it physically by columns. It may allow to store rows of different schema in one same table."
+    },
+    "id" : "1",
+    "superClasses" : [ "26" ]
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Cloud_Datastore",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "iri" : "http://purl.org/db/nosql#MongoDB",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MongoDB"
+    },
+    "id" : "18",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Kudu",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Kudu"
+    },
+    "id" : "129",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#RavenDB",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RavenDB"
+    },
+    "id" : "16",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#MonetDB",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MonetDB"
+    },
+    "id" : "73",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#HQL",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HQL"
+    },
+    "comment" : {
+      "en" : "Hypertable Query Language, query language (SQL-like) used to interact with a Hypertable database."
+    },
+    "id" : "64",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#QueryLanguage",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QueryLanguage"
+    },
+    "subClasses" : [ "64", "21", "68", "66", "60" ],
+    "comment" : {
+      "en" : "A syntax of a query or dialect to interact with a database."
+    },
+    "id" : "22"
+  }, {
+    "iri" : "http://purl.org/db/nosql#Scalaris",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Scalaris"
+    },
+    "id" : "89",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#ObjectID",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObjectID"
+    },
+    "id" : "132",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Data_Bucket",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Data_Bucket"
+    },
+    "id" : "94",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Index",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Index"
+    },
+    "subClasses" : [ "57" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://purl.org/db/nosql#Bagri",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bagri"
+    },
+    "id" : "36",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#SequoiaDB",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SequoiaDB"
+    },
+    "id" : "29",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Cosmos_DB",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cosmos_DB"
+    },
+    "id" : "32",
+    "superClasses" : [ "14", "9", "1", "76", "4" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#CouchDB",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CouchDB"
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#ACID",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ACID"
+    },
+    "comment" : {
+      "en" : "In a database, ACID are four properties: Atomicity, Consistency, Isolation, and Durability, that ensure that transactions, failed or succeded, leave the data in a valid and consistent state."
+    },
+    "id" : "83",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Cloudant",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cloudant"
+    },
+    "id" : "41",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#DocumentID",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DocumentID"
+    },
+    "id" : "138",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Voldemort",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Voldemort"
+    },
+    "id" : "85",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#ArangoDB",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ArangoDB"
+    },
+    "id" : "35",
+    "superClasses" : [ "9", "14", "76", "4" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Cloud_Datastore",
+    "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Cloud_Datastore"
     },
-    "attributes" : [ "external" ],
-    "id" : "20",
-    "superClasses" : [ "2" ]
+    "id" : "38",
+    "superClasses" : [ "4" ]
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Oracle_NoSQL_Database",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "iri" : "http://purl.org/db/nosql#Oracle_NoSQL_Database",
+    "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Oracle_NoSQL_Database"
     },
-    "attributes" : [ "external" ],
-    "id" : "70",
+    "id" : "87",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Memcached",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Memcached"
+    },
+    "id" : "88",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#DocumentDB",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DocumentDB"
+    },
+    "id" : "40",
     "superClasses" : [ "4" ]
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#AQL",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "iri" : "http://purl.org/db/nosql#Riak",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Riak"
+    },
+    "id" : "90",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "136",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.org/db/nosql#PrimaryKey",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PrimaryKey"
+    },
+    "subClasses" : [ "132", "54", "138" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://purl.org/db/nosql#View",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "View"
+    },
+    "subClasses" : [ "118", "81" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://purl.org/db/nosql#BASE",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BASE"
+    },
+    "comment" : {
+      "en" : "A set of four properties: Basically Available, Soft state, Eventual consistency, that are commonly found in distributed NOSQL stores, as apposed to ACID in relational databases. Data added might not be ready for query everywhere, but will eventually be, and hence a system state is in constant change."
+    },
+    "id" : "84",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Sparksee",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sparksee"
+    },
+    "id" : "53",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#AllegroGraph",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AllegroGraph"
+    },
+    "id" : "47",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#SecondaryIndex",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SecondaryIndex"
+    },
+    "id" : "57",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Accumulo",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Accumulo"
+    },
+    "id" : "127",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Blazegraph",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Blazegraph"
+    },
+    "id" : "49",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#Multi-model",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Multi-model"
+    },
+    "subClasses" : [ "37", "35", "32" ],
+    "id" : "76",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#AQL",
+    "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
       "IRI-based" : "AQL"
@@ -815,391 +1021,97 @@
     "comment" : {
       "en" : "ArangoDB Query Language, query language used to interact with an ArangoDB database."
     },
-    "attributes" : [ "external" ],
-    "id" : "129",
-    "superClasses" : [ "17" ]
+    "id" : "68",
+    "superClasses" : [ "22" ]
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#KeyValue",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "iri" : "http://purl.org/db/nosql#upscaledb",
+    "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "KeyValue"
+      "IRI-based" : "upscaledb"
     },
-    "subClasses" : [ "24", "22", "5", "3", "124", "76", "47", "48", "67", "70", "50", "62", "60", "32" ],
-    "comment" : {
-      "en" : "Key-value store stores data in form of long key,value maps."
-    },
-    "attributes" : [ "external" ],
-    "id" : "4",
-    "superClasses" : [ "13" ]
+    "id" : "86",
+    "superClasses" : [ "9" ]
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#CouchDB",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "CouchDB"
-    },
-    "attributes" : [ "external" ],
-    "id" : "118",
-    "superClasses" : [ "2" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Cassandra",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Cassandra"
-    },
-    "attributes" : [ "external" ],
-    "id" : "133",
-    "superClasses" : [ "45" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Cosmos_DB",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Cosmos_DB"
-    },
-    "attributes" : [ "external" ],
-    "id" : "22",
-    "superClasses" : [ "4", "33", "2", "15", "45" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Cypher",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Cypher"
-    },
-    "comment" : {
-      "en" : "Query language used to intereact with a Neo4j database."
-    },
-    "attributes" : [ "external" ],
-    "id" : "140",
-    "superClasses" : [ "17" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Bagri",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Bagri"
-    },
-    "attributes" : [ "external" ],
-    "id" : "31",
-    "superClasses" : [ "2" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#PrimaryKey",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PrimaryKey"
-    },
-    "subClasses" : [ "64", "56", "53" ],
-    "attributes" : [ "external" ],
-    "id" : "54"
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Entity",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "iri" : "http://purl.org/db/nosql#Entity",
+    "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Entity"
     },
-    "subClasses" : [ "10", "37", "28" ],
+    "subClasses" : [ "11", "94", "79" ],
     "comment" : {
       "en" : "A term that groups all concepts used by different databases to store similar data together."
     },
-    "attributes" : [ "external" ],
-    "id" : "11"
+    "id" : "12"
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#InfiniteGraph",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "iri" : "http://purl.org/db/nosql#Cassandra",
+    "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "InfiniteGraph"
+      "IRI-based" : "Cassandra"
     },
-    "attributes" : [ "external" ],
-    "id" : "101",
-    "superClasses" : [ "15" ]
+    "id" : "128",
+    "superClasses" : [ "1" ]
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#JanusGraph",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "iri" : "http://purl.org/db/nosql#Redis",
+    "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "JanusGraph"
+      "IRI-based" : "Redis"
     },
-    "attributes" : [ "external" ],
-    "id" : "104",
-    "superClasses" : [ "15" ]
+    "id" : "91",
+    "superClasses" : [ "9" ]
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Document",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "iri" : "http://purl.org/db/nosql#Cluster",
+    "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Document"
-    },
-    "subClasses" : [ "24", "22", "31", "26", "20", "9", "1", "79", "32", "118", "115", "109", "92", "89" ],
-    "comment" : {
-      "en" : "Document store stores data in form of documents, like under JSOB/BSON formats."
-    },
-    "attributes" : [ "external" ],
-    "id" : "2",
-    "superClasses" : [ "13" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Scylla",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Scylla"
-    },
-    "attributes" : [ "external" ],
-    "id" : "81",
-    "superClasses" : [ "45" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Druid",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Druid"
-    },
-    "attributes" : [ "external" ],
-    "id" : "83",
-    "superClasses" : [ "45" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Index",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Index"
-    },
-    "subClasses" : [ "95" ],
-    "attributes" : [ "external" ],
-    "id" : "96"
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#DynamoDB",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "DynamoDB"
-    },
-    "attributes" : [ "external" ],
-    "id" : "67",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Store",
-    "equivalent" : [ "12" ],
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Store"
-    },
-    "subClasses" : [ "4", "33", "2", "15", "45" ],
-    "comment" : {
-      "en" : "Only SQL, NOSQL stores are databases designed around other models than the traditional relational database. It has five categories: Key-value, document, columnar, graph and multi-model."
-    },
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "13"
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Trinity",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Trinity"
-    },
-    "attributes" : [ "external" ],
-    "id" : "103",
-    "superClasses" : [ "15" ]
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "143",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#SimpleDB",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "SimpleDB"
-    },
-    "attributes" : [ "external" ],
-    "id" : "149",
-    "superClasses" : [ "45" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#DocumentID",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "DocumentID"
-    },
-    "attributes" : [ "external" ],
-    "id" : "64",
-    "superClasses" : [ "54" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#MarkLogic",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MarkLogic"
-    },
-    "attributes" : [ "external" ],
-    "id" : "109",
-    "superClasses" : [ "2" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Columnar",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Columnar"
-    },
-    "subClasses" : [ "83", "81", "22", "78", "44", "75", "73", "126", "149", "133", "105" ],
-    "comment" : {
-      "en" : "Columnar or column-based store organises data virtually around rows, but stores it physically by columns. It may allow to store rows of different schema in one same table."
-    },
-    "attributes" : [ "external" ],
-    "id" : "45",
-    "superClasses" : [ "13" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#DSE_Graph",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "DSE_Graph"
-    },
-    "attributes" : [ "external" ],
-    "id" : "99",
-    "superClasses" : [ "15" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#SequoiaDB",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "SequoiaDB"
-    },
-    "attributes" : [ "external" ],
-    "id" : "26",
-    "superClasses" : [ "2" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#HypergraphDB",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "HypergraphDB"
-    },
-    "attributes" : [ "external" ],
-    "id" : "100",
-    "superClasses" : [ "15" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Cloudant",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Cloudant"
-    },
-    "attributes" : [ "external" ],
-    "id" : "1",
-    "superClasses" : [ "2" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Kudu",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Kudu"
-    },
-    "attributes" : [ "external" ],
-    "id" : "75",
-    "superClasses" : [ "45" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Attribute",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Attribute"
+      "IRI-based" : "Cluster"
     },
     "comment" : {
-      "en" : "A term that groups all concepts used by different databases to characterize a particular datum stored in it, e.g., column in  Cassandra, field in MongoDB"
+      "en" : "A group of physical or virtual computing machines."
     },
-    "attributes" : [ "external" ],
-    "id" : "98"
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Berkeley_DB",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Berkeley_DB"
-    },
-    "attributes" : [ "external" ],
-    "id" : "60",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Data_Bucket",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Data_Bucket"
-    },
-    "attributes" : [ "external" ],
-    "id" : "37",
-    "superClasses" : [ "11" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#QueryLanguage",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "QueryLanguage"
-    },
-    "subClasses" : [ "16", "129", "140", "77", "112" ],
-    "comment" : {
-      "en" : "A syntax of a query or dialect to interact with a database."
-    },
-    "attributes" : [ "external" ],
-    "id" : "17"
+    "id" : "131"
   } ],
   "property" : [ {
-    "id" : "0",
+    "id" : "2",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "18",
+    "id" : "15",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "19",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "21",
+    "id" : "17",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "23",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "25",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "27",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "30",
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "34",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "36",
+    "id" : "42",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "38",
+    "id" : "43",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "41",
+    "id" : "44",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "52",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "55",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "57",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "58",
+    "id" : "56",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "59",
@@ -1208,22 +1120,22 @@
     "id" : "61",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "63",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "65",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "66",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "68",
+    "id" : "67",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "69",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "71",
+    "id" : "70",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "72",
@@ -1232,61 +1144,67 @@
     "id" : "74",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "80",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "82",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "84",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "85",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "86",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "87",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "88",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "90",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "91",
     "type" : "owl:objectProperty"
   }, {
     "id" : "93",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "94",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "97",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "106",
+    "id" : "97",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "107",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "108",
+    "id" : "109",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "110",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "111",
+    "id" : "112",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "113",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "114",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "115",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "116",
@@ -1296,7 +1214,7 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "119",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "120",
     "type" : "rdfs:SubClassOf"
@@ -1310,47 +1228,44 @@
     "id" : "123",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "125",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "127",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "128",
-    "type" : "owl:objectProperty"
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "130",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "131",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "132",
+    "id" : "133",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "134",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "135",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "136",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "137",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "138",
+    "id" : "139",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "139",
+    "id" : "140",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "141",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "142",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "144",
     "type" : "rdfs:SubClassOf"
@@ -1359,12 +1274,15 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "146",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "147",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "149",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "150",
@@ -1406,7 +1324,10 @@
     "id" : "162",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "29",
+    "id" : "105",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
     "type" : "owl:objectProperty"
   }, {
     "id" : "163",
@@ -1425,545 +1346,545 @@
     "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
-    "range" : "2",
-    "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "0"
-  }, {
-    "range" : "2",
-    "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "18"
-  }, {
-    "range" : "2",
-    "domain" : "20",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "19"
-  }, {
-    "range" : "2",
-    "domain" : "22",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "21"
-  }, {
-    "range" : "2",
-    "domain" : "24",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "23"
-  }, {
-    "range" : "2",
-    "domain" : "26",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "25"
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#hasTable",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "range" : "28",
-    "label" : {
-      "IRI-based" : "hasTable"
-    },
-    "superproperty" : [ "29" ],
-    "domain" : "12",
-    "comment" : {
-      "en" : "Certain NOSQL databases store data in tables."
-    },
-    "attributes" : [ "object", "external" ],
-    "id" : "27"
-  }, {
-    "range" : "2",
-    "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "30"
-  }, {
-    "range" : "11",
-    "domain" : "28",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "34"
-  }, {
-    "range" : "11",
-    "domain" : "37",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "36"
-  }, {
-    "range" : "40",
-    "domain" : "39",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "38"
-  }, {
-    "range" : "40",
-    "domain" : "42",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "41"
-  }, {
-    "range" : "54",
-    "domain" : "53",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "52"
-  }, {
-    "range" : "54",
-    "domain" : "56",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "55"
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#queriedBy",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "range" : "17",
-    "label" : {
-      "IRI-based" : "queriedBy"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "Define the query language of a certain database."
-    },
-    "attributes" : [ "object", "external" ],
-    "id" : "57"
-  }, {
-    "range" : "11",
-    "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "58"
-  }, {
-    "range" : "4",
-    "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "59"
-  }, {
-    "range" : "4",
-    "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "61"
-  }, {
-    "range" : "54",
-    "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "63"
-  }, {
-    "range" : "4",
-    "domain" : "32",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "65"
-  }, {
-    "range" : "4",
-    "domain" : "67",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "66"
-  }, {
-    "range" : "4",
-    "domain" : "50",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "68"
-  }, {
-    "range" : "4",
-    "domain" : "70",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "69"
-  }, {
-    "range" : "45",
-    "domain" : "44",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "71"
-  }, {
-    "range" : "45",
-    "domain" : "73",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "72"
-  }, {
-    "range" : "45",
-    "domain" : "75",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "74"
-  }, {
-    "range" : "45",
-    "domain" : "81",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "80"
-  }, {
-    "range" : "45",
-    "domain" : "83",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "82"
-  }, {
-    "range" : "45",
-    "domain" : "78",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "84"
-  }, {
-    "range" : "45",
-    "domain" : "22",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "85"
-  }, {
-    "range" : "13",
-    "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "86"
-  }, {
-    "range" : "13",
-    "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "87"
-  }, {
-    "range" : "13",
-    "domain" : "45",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "88"
-  }, {
-    "range" : "13",
-    "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "90"
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#hasCollection",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "range" : "10",
-    "label" : {
-      "IRI-based" : "hasCollection"
-    },
-    "superproperty" : [ "29" ],
-    "domain" : "92",
-    "comment" : {
-      "en" : "Special to MongoDB, data is stored in collections of documents."
-    },
-    "attributes" : [ "object", "external" ],
-    "id" : "91"
-  }, {
-    "range" : "13",
-    "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "93"
-  }, {
-    "range" : "96",
-    "domain" : "95",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "94"
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#hasAttribute",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "range" : "98",
-    "label" : {
-      "IRI-based" : "hasAttribute"
-    },
-    "domain" : "11",
-    "comment" : {
-      "en" : "An entity in a database consists of a set of attributes."
-    },
-    "attributes" : [ "object", "external" ],
-    "id" : "97"
-  }, {
-    "range" : "7",
-    "domain" : "35",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "106"
-  }, {
-    "range" : "2",
-    "domain" : "92",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "107"
-  }, {
-    "range" : "2",
-    "domain" : "109",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "108"
-  }, {
-    "range" : "7",
-    "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "110"
-  }, {
-    "range" : "2",
-    "domain" : "89",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "111"
-  }, {
-    "range" : "2",
-    "domain" : "32",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "113"
-  }, {
-    "range" : "2",
-    "domain" : "79",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "114"
-  }, {
-    "range" : "2",
-    "domain" : "115",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "116"
-  }, {
-    "range" : "2",
-    "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "117"
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#hasIndex",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "range" : "96",
-    "label" : {
-      "IRI-based" : "hasIndex"
-    },
-    "domain" : "13",
-    "attributes" : [ "object", "external" ],
-    "id" : "119"
-  }, {
-    "range" : "15",
-    "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "120"
-  }, {
-    "range" : "15",
-    "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "121"
-  }, {
-    "range" : "17",
-    "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "122"
-  }, {
-    "range" : "15",
-    "domain" : "32",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "123"
-  }, {
-    "range" : "15",
-    "domain" : "104",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "125"
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#hasData_Bucket",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "range" : "37",
-    "label" : {
-      "IRI-based" : "hasData_Bucket"
-    },
-    "superproperty" : [ "29" ],
-    "domain" : "118",
-    "comment" : {
-      "en" : "Special to CouchDB databases, a CouchDB has a number of data buckets."
-    },
-    "attributes" : [ "object", "external" ],
-    "id" : "127"
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#hasPrimaryKey",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "range" : "54",
-    "label" : {
-      "IRI-based" : "hasPrimaryKey"
-    },
-    "domain" : "11",
-    "comment" : {
-      "en" : "Sets the primary key of an entity of a database."
-    },
-    "attributes" : [ "object", "external" ],
-    "id" : "128"
-  }, {
-    "range" : "15",
-    "domain" : "103",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "130"
-  }, {
-    "range" : "15",
-    "domain" : "102",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "131"
-  }, {
-    "range" : "15",
-    "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "132"
-  }, {
-    "range" : "15",
-    "domain" : "100",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "134"
-  }, {
-    "range" : "15",
-    "domain" : "101",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "135"
-  }, {
-    "range" : "15",
-    "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "136"
-  }, {
-    "range" : "15",
-    "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "137"
-  }, {
-    "range" : "15",
-    "domain" : "24",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "138"
-  }, {
-    "range" : "15",
-    "domain" : "22",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "139"
-  }, {
-    "range" : "15",
-    "domain" : "99",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "141"
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#store",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "range" : "13",
-    "label" : {
-      "IRI-based" : "store"
-    },
-    "domain" : "143",
-    "attributes" : [ "object", "external" ],
-    "id" : "142"
-  }, {
-    "range" : "33",
-    "domain" : "22",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "144"
-  }, {
-    "range" : "33",
-    "domain" : "24",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "145"
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#viewIn",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "range" : "13",
-    "label" : {
-      "IRI-based" : "viewIn"
-    },
-    "domain" : "40",
-    "attributes" : [ "object", "external" ],
-    "id" : "146"
-  }, {
-    "range" : "33",
-    "domain" : "32",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "147"
-  }, {
-    "range" : "45",
-    "domain" : "149",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "148"
-  }, {
-    "range" : "45",
-    "domain" : "126",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "150"
-  }, {
-    "range" : "45",
-    "domain" : "105",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "151"
-  }, {
-    "range" : "45",
-    "domain" : "133",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "152"
-  }, {
-    "range" : "4",
-    "domain" : "24",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "153"
-  }, {
-    "range" : "4",
-    "domain" : "22",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "154"
-  }, {
-    "range" : "4",
-    "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "155"
-  }, {
     "range" : "4",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "156"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "2"
   }, {
     "range" : "4",
-    "domain" : "124",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "157"
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
   }, {
     "range" : "4",
-    "domain" : "76",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "158"
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
   }, {
     "range" : "4",
-    "domain" : "47",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "159"
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
   }, {
-    "range" : "4",
-    "domain" : "48",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "160"
-  }, {
-    "range" : "6",
-    "domain" : "35",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "161"
-  }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#compliesWith",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "range" : "7",
+    "iri" : "http://purl.org/db/nosql#compliesWith",
+    "baseIri" : "http://purl.org/db/nosql",
+    "range" : "27",
     "label" : {
       "IRI-based" : "compliesWith"
     },
-    "domain" : "13",
+    "domain" : "26",
     "comment" : {
       "en" : "Tell which database is compliant with which properties, like relational database with ACID properties, or NOSQL wirh BASE properties."
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "162"
+    "attributes" : [ "object" ],
+    "id" : "25"
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#hasEntity",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "range" : "11",
+    "range" : "4",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "range" : "4",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "4",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "4",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "4",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "range" : "4",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "4",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "range" : "58",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "22",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "4",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "range" : "22",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "range" : "22",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "63"
+  }, {
+    "range" : "22",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "range" : "22",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://purl.org/db/nosql#hasPrimaryKey",
+    "baseIri" : "http://purl.org/db/nosql",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "hasPrimaryKey"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Sets the primary key of an entity of a database."
+    },
+    "attributes" : [ "object" ],
+    "id" : "69"
+  }, {
+    "range" : "1",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "70"
+  }, {
+    "range" : "1",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "72"
+  }, {
+    "range" : "1",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "range" : "9",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "75"
+  }, {
+    "range" : "9",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
+  }, {
+    "range" : "9",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://purl.org/db/nosql#hasIndex",
+    "baseIri" : "http://purl.org/db/nosql",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "hasIndex"
+    },
+    "domain" : "26",
+    "attributes" : [ "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://purl.org/db/nosql#hasData_Bucket",
+    "baseIri" : "http://purl.org/db/nosql",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "hasData_Bucket"
+    },
+    "superproperty" : [ "95" ],
+    "domain" : "3",
+    "comment" : {
+      "en" : "Special to CouchDB databases, a CouchDB has a number of data buckets."
+    },
+    "attributes" : [ "object" ],
+    "id" : "93"
+  }, {
+    "range" : "27",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "97"
+  }, {
+    "range" : "14",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "98"
+  }, {
+    "range" : "9",
+    "domain" : "85",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "99"
+  }, {
+    "range" : "27",
+    "domain" : "84",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "100"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "101"
+  }, {
+    "range" : "14",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "range" : "14",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "103"
+  }, {
+    "range" : "14",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://purl.org/db/nosql#hasEntity",
+    "baseIri" : "http://purl.org/db/nosql",
+    "range" : "12",
     "label" : {
       "IRI-based" : "hasEntity"
     },
-    "domain" : "13",
-    "subproperty" : [ "91", "27", "127" ],
+    "domain" : "26",
+    "subproperty" : [ "105", "93", "106" ],
     "comment" : {
       "en" : "A database contails one or more entities."
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "29"
+    "attributes" : [ "object" ],
+    "id" : "95"
   }, {
-    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#runsIn",
-    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
-    "range" : "8",
+    "range" : "14",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "107"
+  }, {
+    "range" : "14",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://purl.org/db/nosql#queriedBy",
+    "baseIri" : "http://purl.org/db/nosql",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "queriedBy"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Define the query language of a certain database."
+    },
+    "attributes" : [ "object" ],
+    "id" : "110"
+  }, {
+    "range" : "14",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "112"
+  }, {
+    "range" : "14",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "113"
+  }, {
+    "range" : "14",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "114"
+  }, {
+    "range" : "14",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "115"
+  }, {
+    "range" : "14",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "116"
+  }, {
+    "range" : "4",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "117"
+  }, {
+    "range" : "4",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "119"
+  }, {
+    "range" : "14",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
+  }, {
+    "range" : "14",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "range" : "12",
+    "domain" : "94",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "range" : "26",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "124"
+  }, {
+    "range" : "12",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "76",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://purl.org/db/nosql#runsIn",
+    "baseIri" : "http://purl.org/db/nosql",
+    "range" : "131",
     "label" : {
       "IRI-based" : "runsIn"
     },
-    "domain" : "13",
+    "domain" : "26",
     "comment" : {
       "en" : "A distributed database can run in a cluster."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "object" ],
+    "id" : "130"
+  }, {
+    "range" : "76",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "133"
+  }, {
+    "range" : "76",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://purl.org/db/nosql#store",
+    "baseIri" : "http://purl.org/db/nosql",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "store"
+    },
+    "domain" : "136",
+    "attributes" : [ "object" ],
+    "id" : "135"
+  }, {
+    "range" : "55",
+    "domain" : "138",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "137"
+  }, {
+    "range" : "55",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "139"
+  }, {
+    "range" : "82",
+    "domain" : "81",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "82",
+    "domain" : "118",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "141"
+  }, {
+    "range" : "9",
+    "domain" : "91",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "142"
+  }, {
+    "range" : "9",
+    "domain" : "90",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "143"
+  }, {
+    "range" : "55",
+    "domain" : "132",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "144"
+  }, {
+    "range" : "9",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
+  }, {
+    "range" : "9",
+    "domain" : "89",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "range" : "9",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "range" : "9",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "9",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  }, {
+    "range" : "9",
+    "domain" : "86",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "150"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "151"
+  }, {
+    "range" : "9",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "152"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
+  }, {
+    "range" : "1",
+    "domain" : "111",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "1",
+    "domain" : "108",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "range" : "1",
+    "domain" : "127",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "range" : "1",
+    "domain" : "128",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "range" : "1",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "range" : "1",
+    "domain" : "129",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "159"
+  }, {
+    "range" : "1",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "160"
+  }, {
+    "range" : "84",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "161"
+  }, {
+    "iri" : "http://purl.org/db/nosql#hasAttribute",
+    "baseIri" : "http://purl.org/db/nosql",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "hasAttribute"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "An entity in a database consists of a set of attributes."
+    },
+    "attributes" : [ "object" ],
+    "id" : "162"
+  }, {
+    "iri" : "http://purl.org/db/nosql#hasTable",
+    "baseIri" : "http://purl.org/db/nosql",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasTable"
+    },
+    "superproperty" : [ "95" ],
+    "domain" : "96",
+    "comment" : {
+      "en" : "Certain NOSQL databases store data in tables."
+    },
+    "attributes" : [ "object" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://purl.org/db/nosql#hasCollection",
+    "baseIri" : "http://purl.org/db/nosql",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "hasCollection"
+    },
+    "superproperty" : [ "95" ],
+    "domain" : "18",
+    "comment" : {
+      "en" : "Special to MongoDB, data is stored in collections of documents."
+    },
+    "attributes" : [ "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://purl.org/db/nosql#viewIn",
+    "baseIri" : "http://purl.org/db/nosql",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "viewIn"
+    },
+    "domain" : "82",
+    "attributes" : [ "object" ],
     "id" : "163"
   }, {
-    "range" : "17",
-    "domain" : "140",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "26",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "164"
   }, {
-    "range" : "17",
-    "domain" : "129",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "26",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "165"
   }, {
-    "range" : "17",
-    "domain" : "112",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "26",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "166"
   }, {
-    "range" : "17",
-    "domain" : "77",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "26",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "167"
   } ]
 }

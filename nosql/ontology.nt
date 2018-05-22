@@ -1,6 +1,5 @@
 <http://purl.org/db/nosql> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://purl.org/db/nosql> <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by-nc-sa/3.0/> .
-<http://purl.org/db/nosql> <http://purl.org/dc/elements/1.1/contributor> <http://mohamednadjibmami.com/me> .
 <http://purl.org/db/nosql> <http://purl.org/dc/elements/1.1/created> "2017-12-15T17:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://purl.org/db/nosql> <http://purl.org/dc/elements/1.1/creator> "http://mohamednadjibmami.com/me" .
 <http://purl.org/db/nosql> <http://purl.org/dc/elements/1.1/description> "A vocabulary about NOSQL stores, and their related concepts." .
@@ -44,76 +43,76 @@
 # #################################################################
 # 
 # 
-# http://www.semanticweb.org/owl/owlapi/turtle#compliesWith
-<http://www.semanticweb.org/owl/owlapi/turtle#compliesWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/owl/owlapi/turtle#compliesWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/owl/owlapi/turtle#Store> .
-<http://www.semanticweb.org/owl/owlapi/turtle#compliesWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/vann/Properties> .
-<http://www.semanticweb.org/owl/owlapi/turtle#compliesWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Tell which database is compliant with which properties, like relational database with ACID properties, or NOSQL wirh BASE properties."@en .
+# http://purl.org/db/nosql#compliesWith
+<http://purl.org/db/nosql#compliesWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/db/nosql#compliesWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/db/nosql#Store> .
+<http://purl.org/db/nosql#compliesWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/vann/Properties> .
+<http://purl.org/db/nosql#compliesWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Tell which database is compliant with which properties, like relational database with ACID properties, or NOSQL wirh BASE properties."@en .
 # 
-# http://www.semanticweb.org/owl/owlapi/turtle#hasAttribute
-<http://www.semanticweb.org/owl/owlapi/turtle#hasAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasAttribute> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/owl/owlapi/turtle#Entity> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasAttribute> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/owl/owlapi/turtle#Attribute> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasAttribute> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity in a database consists of a set of attributes."@en .
+# http://purl.org/db/nosql#hasAttribute
+<http://purl.org/db/nosql#hasAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/db/nosql#hasAttribute> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/db/nosql#Entity> .
+<http://purl.org/db/nosql#hasAttribute> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/db/nosql#Attribute> .
+<http://purl.org/db/nosql#hasAttribute> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity in a database consists of a set of attributes."@en .
 # 
-# http://www.semanticweb.org/owl/owlapi/turtle#hasCollection
-<http://www.semanticweb.org/owl/owlapi/turtle#hasCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasCollection> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/owl/owlapi/turtle#hasEntity> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasCollection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/owl/owlapi/turtle#MongoDB> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasCollection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/owl/owlapi/turtle#Collection> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasCollection> <http://www.w3.org/2000/01/rdf-schema#comment> "Special to MongoDB, data is stored in collections of documents."@en .
+# http://purl.org/db/nosql#hasCollection
+<http://purl.org/db/nosql#hasCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/db/nosql#hasCollection> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/db/nosql#hasEntity> .
+<http://purl.org/db/nosql#hasCollection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/db/nosql#MongoDB> .
+<http://purl.org/db/nosql#hasCollection> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/db/nosql#Collection> .
+<http://purl.org/db/nosql#hasCollection> <http://www.w3.org/2000/01/rdf-schema#comment> "Special to MongoDB, data is stored in collections of documents."@en .
 # 
-# http://www.semanticweb.org/owl/owlapi/turtle#hasData_Bucket
-<http://www.semanticweb.org/owl/owlapi/turtle#hasData_Bucket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasData_Bucket> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/owl/owlapi/turtle#hasEntity> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasData_Bucket> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/owl/owlapi/turtle#CouchDB> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasData_Bucket> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/owl/owlapi/turtle#Data_Bucket> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasData_Bucket> <http://www.w3.org/2000/01/rdf-schema#comment> "Special to CouchDB databases, a CouchDB has a number of data buckets."@en .
+# http://purl.org/db/nosql#hasData_Bucket
+<http://purl.org/db/nosql#hasData_Bucket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/db/nosql#hasData_Bucket> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/db/nosql#hasEntity> .
+<http://purl.org/db/nosql#hasData_Bucket> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/db/nosql#CouchDB> .
+<http://purl.org/db/nosql#hasData_Bucket> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/db/nosql#Data_Bucket> .
+<http://purl.org/db/nosql#hasData_Bucket> <http://www.w3.org/2000/01/rdf-schema#comment> "Special to CouchDB databases, a CouchDB has a number of data buckets."@en .
 # 
-# http://www.semanticweb.org/owl/owlapi/turtle#hasEntity
-<http://www.semanticweb.org/owl/owlapi/turtle#hasEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/owl/owlapi/turtle#Store> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasEntity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/owl/owlapi/turtle#Entity> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "A database contails one or more entities."@en .
+# http://purl.org/db/nosql#hasEntity
+<http://purl.org/db/nosql#hasEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/db/nosql#hasEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/db/nosql#Store> .
+<http://purl.org/db/nosql#hasEntity> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/db/nosql#Entity> .
+<http://purl.org/db/nosql#hasEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "A database contails one or more entities."@en .
 # 
-# http://www.semanticweb.org/owl/owlapi/turtle#hasIndex
-<http://www.semanticweb.org/owl/owlapi/turtle#hasIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasIndex> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/owl/owlapi/turtle#Store> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasIndex> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/owl/owlapi/turtle#Index> .
+# http://purl.org/db/nosql#hasIndex
+<http://purl.org/db/nosql#hasIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/db/nosql#hasIndex> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/db/nosql#Store> .
+<http://purl.org/db/nosql#hasIndex> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/db/nosql#Index> .
 # 
-# http://www.semanticweb.org/owl/owlapi/turtle#hasPrimaryKey
-<http://www.semanticweb.org/owl/owlapi/turtle#hasPrimaryKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasPrimaryKey> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/owl/owlapi/turtle#Entity> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasPrimaryKey> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/owl/owlapi/turtle#PrimaryKey> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasPrimaryKey> <http://www.w3.org/2000/01/rdf-schema#comment> "Sets the primary key of an entity of a database."@en .
+# http://purl.org/db/nosql#hasPrimaryKey
+<http://purl.org/db/nosql#hasPrimaryKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/db/nosql#hasPrimaryKey> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/db/nosql#Entity> .
+<http://purl.org/db/nosql#hasPrimaryKey> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/db/nosql#PrimaryKey> .
+<http://purl.org/db/nosql#hasPrimaryKey> <http://www.w3.org/2000/01/rdf-schema#comment> "Sets the primary key of an entity of a database."@en .
 # 
-# http://www.semanticweb.org/owl/owlapi/turtle#hasTable
-<http://www.semanticweb.org/owl/owlapi/turtle#hasTable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasTable> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/owl/owlapi/turtle#hasEntity> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasTable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/owl/owlapi/turtle#NonRelationalDB> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasTable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/owl/owlapi/turtle#Table> .
-<http://www.semanticweb.org/owl/owlapi/turtle#hasTable> <http://www.w3.org/2000/01/rdf-schema#comment> "Certain NOSQL databases store data in tables."@en .
+# http://purl.org/db/nosql#hasTable
+<http://purl.org/db/nosql#hasTable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/db/nosql#hasTable> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/db/nosql#hasEntity> .
+<http://purl.org/db/nosql#hasTable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/db/nosql#NonRelationalDB> .
+<http://purl.org/db/nosql#hasTable> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/db/nosql#Table> .
+<http://purl.org/db/nosql#hasTable> <http://www.w3.org/2000/01/rdf-schema#comment> "Certain NOSQL databases store data in tables."@en .
 # 
-# http://www.semanticweb.org/owl/owlapi/turtle#queriedBy
-<http://www.semanticweb.org/owl/owlapi/turtle#queriedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/owl/owlapi/turtle#queriedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/owl/owlapi/turtle#Store> .
-<http://www.semanticweb.org/owl/owlapi/turtle#queriedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/owl/owlapi/turtle#QueryLanguage> .
-<http://www.semanticweb.org/owl/owlapi/turtle#queriedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Define the query language of a certain database."@en .
+# http://purl.org/db/nosql#queriedBy
+<http://purl.org/db/nosql#queriedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/db/nosql#queriedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/db/nosql#Store> .
+<http://purl.org/db/nosql#queriedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/db/nosql#QueryLanguage> .
+<http://purl.org/db/nosql#queriedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Define the query language of a certain database."@en .
 # 
-# http://www.semanticweb.org/owl/owlapi/turtle#runsIn
-<http://www.semanticweb.org/owl/owlapi/turtle#runsIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/owl/owlapi/turtle#runsIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/owl/owlapi/turtle#Store> .
-<http://www.semanticweb.org/owl/owlapi/turtle#runsIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/owl/owlapi/turtle#Cluster> .
-<http://www.semanticweb.org/owl/owlapi/turtle#runsIn> <http://www.w3.org/2000/01/rdf-schema#comment> "A distributed database can run in a cluster."@en .
+# http://purl.org/db/nosql#runsIn
+<http://purl.org/db/nosql#runsIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/db/nosql#runsIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/db/nosql#Store> .
+<http://purl.org/db/nosql#runsIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/db/nosql#Cluster> .
+<http://purl.org/db/nosql#runsIn> <http://www.w3.org/2000/01/rdf-schema#comment> "A distributed database can run in a cluster."@en .
 # 
-# http://www.semanticweb.org/owl/owlapi/turtle#store
-<http://www.semanticweb.org/owl/owlapi/turtle#store> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/owl/owlapi/turtle#store> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/owl/owlapi/turtle#Store> .
+# http://purl.org/db/nosql#store
+<http://purl.org/db/nosql#store> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/db/nosql#store> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/db/nosql#Store> .
 # 
-# http://www.semanticweb.org/owl/owlapi/turtle#viewIn
-<http://www.semanticweb.org/owl/owlapi/turtle#viewIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/owl/owlapi/turtle#viewIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/owl/owlapi/turtle#View> .
-<http://www.semanticweb.org/owl/owlapi/turtle#viewIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/owl/owlapi/turtle#Store> .
+# http://purl.org/db/nosql#viewIn
+<http://purl.org/db/nosql#viewIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/db/nosql#viewIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/db/nosql#View> .
+<http://purl.org/db/nosql#viewIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/db/nosql#Store> .
 # 
 # 
 # 
@@ -124,334 +123,334 @@
 # #################################################################
 # 
 # 
+# http://purl.org/db/nosql#ACID
+<http://purl.org/db/nosql#ACID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#ACID> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/vann/Properties> .
+<http://purl.org/db/nosql#ACID> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/db/nosql#BASE> .
+<http://purl.org/db/nosql#ACID> <http://www.w3.org/2000/01/rdf-schema#comment> "In a database, ACID are four properties: Atomicity, Consistency, Isolation, and Durability, that ensure that transactions, failed or succeded, leave the data in a valid and consistent state."@en .
+# 
+# http://purl.org/db/nosql#AQL
+<http://purl.org/db/nosql#AQL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#AQL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#QueryLanguage> .
+<http://purl.org/db/nosql#AQL> <http://www.w3.org/2000/01/rdf-schema#comment> "ArangoDB Query Language, query language used to interact with an ArangoDB database."@en .
+# 
+# http://purl.org/db/nosql#Accumulo
+<http://purl.org/db/nosql#Accumulo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Accumulo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Columnar> .
+# 
+# http://purl.org/db/nosql#AllegroGraph
+<http://purl.org/db/nosql#AllegroGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#AllegroGraph> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Graph> .
+# 
+# http://purl.org/db/nosql#ArangoDB
+<http://purl.org/db/nosql#ArangoDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#ArangoDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Document> .
+<http://purl.org/db/nosql#ArangoDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Graph> .
+<http://purl.org/db/nosql#ArangoDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#KeyValue> .
+<http://purl.org/db/nosql#ArangoDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Multi-model> .
+# 
+# http://purl.org/db/nosql#Attribute
+<http://purl.org/db/nosql#Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Attribute> <http://www.w3.org/2000/01/rdf-schema#comment> "A term that groups all concepts used by different databases to characterize a particular datum stored in it, e.g., column in  Cassandra, field in MongoDB"@en .
+# 
+# http://purl.org/db/nosql#BASE
+<http://purl.org/db/nosql#BASE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#BASE> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/vann/Properties> .
+<http://purl.org/db/nosql#BASE> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of four properties: Basically Available, Soft state, Eventual consistency, that are commonly found in distributed NOSQL stores, as apposed to ACID in relational databases. Data added might not be ready for query everywhere, but will eventually be, and hence a system state is in constant change."@en .
+# 
+# http://purl.org/db/nosql#Bagri
+<http://purl.org/db/nosql#Bagri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Bagri> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Document> .
+# 
+# http://purl.org/db/nosql#Berkeley_DB
+<http://purl.org/db/nosql#Berkeley_DB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Berkeley_DB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#KeyValue> .
+# 
+# http://purl.org/db/nosql#Blazegraph
+<http://purl.org/db/nosql#Blazegraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Blazegraph> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Graph> .
+# 
+# http://purl.org/db/nosql#CQL
+<http://purl.org/db/nosql#CQL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#CQL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#QueryLanguage> .
+<http://purl.org/db/nosql#CQL> <http://www.w3.org/2000/01/rdf-schema#comment> "Cassandra Query Language, query language (SQL-like) used to interact with a Cassandra database."@en .
+# 
+# http://purl.org/db/nosql#Cassandra
+<http://purl.org/db/nosql#Cassandra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Cassandra> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Columnar> .
+# 
+# http://purl.org/db/nosql#Chouchbase
+<http://purl.org/db/nosql#Chouchbase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Chouchbase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Document> .
+# 
+# http://purl.org/db/nosql#Cloud_Datastore
+<http://purl.org/db/nosql#Cloud_Datastore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Cloud_Datastore> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Document> .
+# 
+# http://purl.org/db/nosql#Cloudant
+<http://purl.org/db/nosql#Cloudant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Cloudant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Document> .
+# 
+# http://purl.org/db/nosql#Cluster
+<http://purl.org/db/nosql#Cluster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Cluster> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of physical or virtual computing machines."@en .
+# 
+# http://purl.org/db/nosql#Collection
+<http://purl.org/db/nosql#Collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Collection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Entity> .
+# 
+# http://purl.org/db/nosql#Columnar
+<http://purl.org/db/nosql#Columnar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Columnar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Store> .
+<http://purl.org/db/nosql#Columnar> <http://www.w3.org/2000/01/rdf-schema#comment> "Columnar or column-based store organises data virtually around rows, but stores it physically by columns. It may allow to store rows of different schema in one same table."@en .
+# 
+# http://purl.org/db/nosql#Cosmos_DB
+<http://purl.org/db/nosql#Cosmos_DB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Cosmos_DB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Columnar> .
+<http://purl.org/db/nosql#Cosmos_DB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Document> .
+<http://purl.org/db/nosql#Cosmos_DB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Graph> .
+<http://purl.org/db/nosql#Cosmos_DB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#KeyValue> .
+<http://purl.org/db/nosql#Cosmos_DB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Multi-model> .
+# 
+# http://purl.org/db/nosql#CouchDB
+<http://purl.org/db/nosql#CouchDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#CouchDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Document> .
+# 
+# http://purl.org/db/nosql#Cypher
+<http://purl.org/db/nosql#Cypher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Cypher> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#QueryLanguage> .
+<http://purl.org/db/nosql#Cypher> <http://www.w3.org/2000/01/rdf-schema#comment> "Query language used to intereact with a Neo4j database."@en .
+# 
+# http://purl.org/db/nosql#DSE_Graph
+<http://purl.org/db/nosql#DSE_Graph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#DSE_Graph> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Graph> .
+# 
+# http://purl.org/db/nosql#Data_Bucket
+<http://purl.org/db/nosql#Data_Bucket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Data_Bucket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Entity> .
+# 
+# http://purl.org/db/nosql#Dgraph
+<http://purl.org/db/nosql#Dgraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Dgraph> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Graph> .
+# 
+# http://purl.org/db/nosql#Document
+<http://purl.org/db/nosql#Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Store> .
+<http://purl.org/db/nosql#Document> <http://www.w3.org/2000/01/rdf-schema#comment> "Document store stores data in form of documents, like under JSOB/BSON formats."@en .
+# 
+# http://purl.org/db/nosql#DocumentDB
+<http://purl.org/db/nosql#DocumentDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#DocumentDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Document> .
+# 
+# http://purl.org/db/nosql#DocumentID
+<http://purl.org/db/nosql#DocumentID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#DocumentID> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#PrimaryKey> .
+# 
+# http://purl.org/db/nosql#Druid
+<http://purl.org/db/nosql#Druid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Druid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Columnar> .
+# 
+# http://purl.org/db/nosql#DynamoDB
+<http://purl.org/db/nosql#DynamoDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#DynamoDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#KeyValue> .
+# 
+# http://purl.org/db/nosql#Elassandra
+<http://purl.org/db/nosql#Elassandra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Elassandra> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Columnar> .
+# 
+# http://purl.org/db/nosql#Entity
+<http://purl.org/db/nosql#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Entity> <http://www.w3.org/2000/01/rdf-schema#comment> "A term that groups all concepts used by different databases to store similar data together."@en .
+# 
+# http://purl.org/db/nosql#GlobalSecondaryIndex
+<http://purl.org/db/nosql#GlobalSecondaryIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#GlobalSecondaryIndex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#View> .
+# 
+# http://purl.org/db/nosql#Graph
+<http://purl.org/db/nosql#Graph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Graph> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Store> .
+<http://purl.org/db/nosql#Graph> <http://www.w3.org/2000/01/rdf-schema#comment> "Graph store stores highly interconnected data, in form of graphs."@en .
+# 
+# http://purl.org/db/nosql#Graph_Engine
+<http://purl.org/db/nosql#Graph_Engine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Graph_Engine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Graph> .
+# 
+# http://purl.org/db/nosql#HBase
+<http://purl.org/db/nosql#HBase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#HBase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Columnar> .
+# 
+# http://purl.org/db/nosql#HQL
+<http://purl.org/db/nosql#HQL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#HQL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#QueryLanguage> .
+<http://purl.org/db/nosql#HQL> <http://www.w3.org/2000/01/rdf-schema#comment> "Hypertable Query Language, query language (SQL-like) used to interact with a Hypertable database."@en .
+# 
+# http://purl.org/db/nosql#HypergraphDB
+<http://purl.org/db/nosql#HypergraphDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#HypergraphDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Graph> .
+# 
+# http://purl.org/db/nosql#Hypertable
+<http://purl.org/db/nosql#Hypertable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Hypertable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Columnar> .
+# 
+# http://purl.org/db/nosql#Index
+<http://purl.org/db/nosql#Index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/db/nosql#InfiniteGraph
+<http://purl.org/db/nosql#InfiniteGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#InfiniteGraph> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Graph> .
+# 
+# http://purl.org/db/nosql#JanusGraph
+<http://purl.org/db/nosql#JanusGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#JanusGraph> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Graph> .
+# 
+# http://purl.org/db/nosql#KeyValue
+<http://purl.org/db/nosql#KeyValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#KeyValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Store> .
+<http://purl.org/db/nosql#KeyValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Key-value store stores data in form of long key,value maps."@en .
+# 
+# http://purl.org/db/nosql#Kudu
+<http://purl.org/db/nosql#Kudu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Kudu> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Columnar> .
+# 
+# http://purl.org/db/nosql#MarkLogic
+<http://purl.org/db/nosql#MarkLogic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#MarkLogic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Document> .
+# 
+# http://purl.org/db/nosql#MaterializedView
+<http://purl.org/db/nosql#MaterializedView> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#MaterializedView> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#View> .
+# 
+# http://purl.org/db/nosql#Memcached
+<http://purl.org/db/nosql#Memcached> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Memcached> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#KeyValue> .
+# 
+# http://purl.org/db/nosql#MonetDB
+<http://purl.org/db/nosql#MonetDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#MonetDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Columnar> .
+# 
+# http://purl.org/db/nosql#MongoDB
+<http://purl.org/db/nosql#MongoDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#MongoDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Document> .
+# 
+# http://purl.org/db/nosql#Multi-model
+<http://purl.org/db/nosql#Multi-model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Multi-model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Store> .
+# 
+# http://purl.org/db/nosql#Neo4j
+<http://purl.org/db/nosql#Neo4j> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Neo4j> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Graph> .
+# 
+# http://purl.org/db/nosql#NonRelationalDB
+<http://purl.org/db/nosql#NonRelationalDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#NonRelationalDB> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/db/nosql#Store> .
+<http://purl.org/db/nosql#NonRelationalDB> <http://www.w3.org/2000/01/rdf-schema#comment> "A non-relation database, is a database that is designed around other models than the relational model. Used interchangbly with NOSQL database or store."@en .
+# 
+# http://purl.org/db/nosql#ObjectID
+<http://purl.org/db/nosql#ObjectID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#ObjectID> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#PrimaryKey> .
+# 
+# http://purl.org/db/nosql#Oracle_NoSQL_Database
+<http://purl.org/db/nosql#Oracle_NoSQL_Database> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Oracle_NoSQL_Database> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#KeyValue> .
+# 
+# http://purl.org/db/nosql#OrientDB
+<http://purl.org/db/nosql#OrientDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#OrientDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Document> .
+<http://purl.org/db/nosql#OrientDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Graph> .
+<http://purl.org/db/nosql#OrientDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#KeyValue> .
+<http://purl.org/db/nosql#OrientDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Multi-model> .
+# 
+# http://purl.org/db/nosql#PrimaryKey
+<http://purl.org/db/nosql#PrimaryKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/db/nosql#Primary_key
+<http://purl.org/db/nosql#Primary_key> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Primary_key> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#PrimaryKey> .
+# 
+# http://purl.org/db/nosql#QueryLanguage
+<http://purl.org/db/nosql#QueryLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#QueryLanguage> <http://www.w3.org/2000/01/rdf-schema#comment> "A syntax of a query or dialect to interact with a database."@en .
+# 
+# http://purl.org/db/nosql#RavenDB
+<http://purl.org/db/nosql#RavenDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#RavenDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Document> .
+# 
+# http://purl.org/db/nosql#Redis
+<http://purl.org/db/nosql#Redis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Redis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#KeyValue> .
+# 
+# http://purl.org/db/nosql#RethinkDB
+<http://purl.org/db/nosql#RethinkDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#RethinkDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Document> .
+# 
+# http://purl.org/db/nosql#Riak
+<http://purl.org/db/nosql#Riak> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Riak> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#KeyValue> .
+# 
+# http://purl.org/db/nosql#Scalaris
+<http://purl.org/db/nosql#Scalaris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Scalaris> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#KeyValue> .
+# 
+# http://purl.org/db/nosql#Scylla
+<http://purl.org/db/nosql#Scylla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Scylla> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Columnar> .
+# 
+# http://purl.org/db/nosql#SecondaryIndex
+<http://purl.org/db/nosql#SecondaryIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#SecondaryIndex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Index> .
+# 
+# http://purl.org/db/nosql#SequoiaDB
+<http://purl.org/db/nosql#SequoiaDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#SequoiaDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Document> .
+# 
+# http://purl.org/db/nosql#SimpleDB
+<http://purl.org/db/nosql#SimpleDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#SimpleDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Columnar> .
+# 
+# http://purl.org/db/nosql#Sparksee
+<http://purl.org/db/nosql#Sparksee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Sparksee> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Graph> .
+# 
+# http://purl.org/db/nosql#Store
+<http://purl.org/db/nosql#Store> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Store> <http://www.w3.org/2000/01/rdf-schema#comment> "Only SQL, NOSQL stores are databases designed around other models than the traditional relational database. It has five categories: Key-value, document, columnar, graph and multi-model."@en .
+<http://purl.org/db/nosql#Store> <http://www.w3.org/2000/01/rdf-schema#comment> "Set the type of NOSQL a certain database is."@en .
+# 
+# http://purl.org/db/nosql#Table
+<http://purl.org/db/nosql#Table> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Table> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Entity> .
+# 
+# http://purl.org/db/nosql#Tarantool
+<http://purl.org/db/nosql#Tarantool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Tarantool> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#KeyValue> .
+# 
+# http://purl.org/db/nosql#Trinity
+<http://purl.org/db/nosql#Trinity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Trinity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Graph> .
+# 
+# http://purl.org/db/nosql#View
+<http://purl.org/db/nosql#View> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/db/nosql#Voldemort
+<http://purl.org/db/nosql#Voldemort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#Voldemort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#KeyValue> .
+# 
+# http://purl.org/db/nosql#c-treeACE
+<http://purl.org/db/nosql#c-treeACE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#c-treeACE> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#KeyValue> .
+# 
+# http://purl.org/db/nosql#upscaledb
+<http://purl.org/db/nosql#upscaledb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#upscaledb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#KeyValue> .
+# 
 # http://purl.org/vocab/vann/N1QL
 <http://purl.org/vocab/vann/N1QL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/vocab/vann/N1QL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#QueryLanguage> .
+<http://purl.org/vocab/vann/N1QL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#QueryLanguage> .
 <http://purl.org/vocab/vann/N1QL> <http://www.w3.org/2000/01/rdf-schema#comment> "Query language (SQL-like) used to interact with a Couchbase database." .
 # 
 # http://purl.org/vocab/vann/Properties
 <http://purl.org/vocab/vann/Properties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# http://www.semanticweb.org/owl/owlapi/turtle#ACID
-<http://www.semanticweb.org/owl/owlapi/turtle#ACID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#ACID> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/vann/Properties> .
-<http://www.semanticweb.org/owl/owlapi/turtle#ACID> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/owl/owlapi/turtle#BASE> .
-<http://www.semanticweb.org/owl/owlapi/turtle#ACID> <http://www.w3.org/2000/01/rdf-schema#comment> "In a database, ACID are four properties: Atomicity, Consistency, Isolation, and Durability, that ensure that transactions, failed or succeded, leave the data in a valid and consistent state."@en .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#AQL
-<http://www.semanticweb.org/owl/owlapi/turtle#AQL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#AQL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#QueryLanguage> .
-<http://www.semanticweb.org/owl/owlapi/turtle#AQL> <http://www.w3.org/2000/01/rdf-schema#comment> "ArangoDB Query Language, query language used to interact with an ArangoDB database."@en .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Accumulo
-<http://www.semanticweb.org/owl/owlapi/turtle#Accumulo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Accumulo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#AllegroGraph
-<http://www.semanticweb.org/owl/owlapi/turtle#AllegroGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#AllegroGraph> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#ArangoDB
-<http://www.semanticweb.org/owl/owlapi/turtle#ArangoDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#ArangoDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
-<http://www.semanticweb.org/owl/owlapi/turtle#ArangoDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
-<http://www.semanticweb.org/owl/owlapi/turtle#ArangoDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
-<http://www.semanticweb.org/owl/owlapi/turtle#ArangoDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Multi-model> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Attribute
-<http://www.semanticweb.org/owl/owlapi/turtle#Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Attribute> <http://www.w3.org/2000/01/rdf-schema#comment> "A term that groups all concepts used by different databases to characterize a particular datum stored in it, e.g., column in  Cassandra, field in MongoDB"@en .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#BASE
-<http://www.semanticweb.org/owl/owlapi/turtle#BASE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#BASE> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/vann/Properties> .
-<http://www.semanticweb.org/owl/owlapi/turtle#BASE> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of four properties: Basically Available, Soft state, Eventual consistency, that are commonly found in distributed NOSQL stores, as apposed to ACID in relational databases. Data added might not be ready for query everywhere, but will eventually be, and hence a system state is in constant change."@en .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Bagri
-<http://www.semanticweb.org/owl/owlapi/turtle#Bagri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Bagri> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Berkeley_DB
-<http://www.semanticweb.org/owl/owlapi/turtle#Berkeley_DB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Berkeley_DB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Blazegraph
-<http://www.semanticweb.org/owl/owlapi/turtle#Blazegraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Blazegraph> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#CQL
-<http://www.semanticweb.org/owl/owlapi/turtle#CQL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#CQL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#QueryLanguage> .
-<http://www.semanticweb.org/owl/owlapi/turtle#CQL> <http://www.w3.org/2000/01/rdf-schema#comment> "Cassandra Query Language, query language (SQL-like) used to interact with a Cassandra database."@en .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Cassandra
-<http://www.semanticweb.org/owl/owlapi/turtle#Cassandra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Cassandra> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Chouchbase
-<http://www.semanticweb.org/owl/owlapi/turtle#Chouchbase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Chouchbase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Cloud_Datastore
-<http://www.semanticweb.org/owl/owlapi/turtle#Cloud_Datastore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Cloud_Datastore> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Cloudant
-<http://www.semanticweb.org/owl/owlapi/turtle#Cloudant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Cloudant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Cluster
-<http://www.semanticweb.org/owl/owlapi/turtle#Cluster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Cluster> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of physical or virtual computing machines."@en .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Collection
-<http://www.semanticweb.org/owl/owlapi/turtle#Collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Collection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Entity> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Columnar
-<http://www.semanticweb.org/owl/owlapi/turtle#Columnar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Columnar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Store> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Columnar> <http://www.w3.org/2000/01/rdf-schema#comment> "Columnar or column-based store organises data virtually around rows, but stores it physically by columns. It may allow to store rows of different schema in one same table."@en .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Cosmos_DB
-<http://www.semanticweb.org/owl/owlapi/turtle#Cosmos_DB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Cosmos_DB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Cosmos_DB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Cosmos_DB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Cosmos_DB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Cosmos_DB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Multi-model> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#CouchDB
-<http://www.semanticweb.org/owl/owlapi/turtle#CouchDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#CouchDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Cypher
-<http://www.semanticweb.org/owl/owlapi/turtle#Cypher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Cypher> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#QueryLanguage> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Cypher> <http://www.w3.org/2000/01/rdf-schema#comment> "Query language used to intereact with a Neo4j database."@en .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#DSE_Graph
-<http://www.semanticweb.org/owl/owlapi/turtle#DSE_Graph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#DSE_Graph> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Data_Bucket
-<http://www.semanticweb.org/owl/owlapi/turtle#Data_Bucket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Data_Bucket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Entity> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Dgraph
-<http://www.semanticweb.org/owl/owlapi/turtle#Dgraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Dgraph> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Document
-<http://www.semanticweb.org/owl/owlapi/turtle#Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Store> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Document> <http://www.w3.org/2000/01/rdf-schema#comment> "Document store stores data in form of documents, like under JSOB/BSON formats."@en .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#DocumentDB
-<http://www.semanticweb.org/owl/owlapi/turtle#DocumentDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#DocumentDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#DocumentID
-<http://www.semanticweb.org/owl/owlapi/turtle#DocumentID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#DocumentID> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#PrimaryKey> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Druid
-<http://www.semanticweb.org/owl/owlapi/turtle#Druid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Druid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#DynamoDB
-<http://www.semanticweb.org/owl/owlapi/turtle#DynamoDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#DynamoDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Elassandra
-<http://www.semanticweb.org/owl/owlapi/turtle#Elassandra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Elassandra> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Entity
-<http://www.semanticweb.org/owl/owlapi/turtle#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Entity> <http://www.w3.org/2000/01/rdf-schema#comment> "A term that groups all concepts used by different databases to store similar data together."@en .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#GlobalSecondaryIndex
-<http://www.semanticweb.org/owl/owlapi/turtle#GlobalSecondaryIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#GlobalSecondaryIndex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#View> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Graph
-<http://www.semanticweb.org/owl/owlapi/turtle#Graph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Graph> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Store> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Graph> <http://www.w3.org/2000/01/rdf-schema#comment> "Graph store stores highly interconnected data, in form of graphs."@en .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Graph_Engine
-<http://www.semanticweb.org/owl/owlapi/turtle#Graph_Engine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Graph_Engine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#HBase
-<http://www.semanticweb.org/owl/owlapi/turtle#HBase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#HBase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#HQL
-<http://www.semanticweb.org/owl/owlapi/turtle#HQL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#HQL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#QueryLanguage> .
-<http://www.semanticweb.org/owl/owlapi/turtle#HQL> <http://www.w3.org/2000/01/rdf-schema#comment> "Hypertable Query Language, query language (SQL-like) used to interact with a Hypertable database."@en .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#HypergraphDB
-<http://www.semanticweb.org/owl/owlapi/turtle#HypergraphDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#HypergraphDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Hypertable
-<http://www.semanticweb.org/owl/owlapi/turtle#Hypertable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Hypertable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Index
-<http://www.semanticweb.org/owl/owlapi/turtle#Index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#InfiniteGraph
-<http://www.semanticweb.org/owl/owlapi/turtle#InfiniteGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#InfiniteGraph> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#JanusGraph
-<http://www.semanticweb.org/owl/owlapi/turtle#JanusGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#JanusGraph> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#KeyValue
-<http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Store> .
-<http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Key-value store stores data in form of long key,value maps."@en .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Kudu
-<http://www.semanticweb.org/owl/owlapi/turtle#Kudu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Kudu> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#MarkLogic
-<http://www.semanticweb.org/owl/owlapi/turtle#MarkLogic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#MarkLogic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#MaterializedView
-<http://www.semanticweb.org/owl/owlapi/turtle#MaterializedView> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#MaterializedView> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#View> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Memcached
-<http://www.semanticweb.org/owl/owlapi/turtle#Memcached> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Memcached> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#MonetDB
-<http://www.semanticweb.org/owl/owlapi/turtle#MonetDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#MonetDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#MongoDB
-<http://www.semanticweb.org/owl/owlapi/turtle#MongoDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#MongoDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Multi-model
-<http://www.semanticweb.org/owl/owlapi/turtle#Multi-model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Multi-model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Store> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Neo4j
-<http://www.semanticweb.org/owl/owlapi/turtle#Neo4j> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Neo4j> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#NonRelationalDB
-<http://www.semanticweb.org/owl/owlapi/turtle#NonRelationalDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#NonRelationalDB> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.semanticweb.org/owl/owlapi/turtle#Store> .
-<http://www.semanticweb.org/owl/owlapi/turtle#NonRelationalDB> <http://www.w3.org/2000/01/rdf-schema#comment> "A non-relation database, is a database that is designed around other models than the relational model. Used interchangbly with NOSQL database or store."@en .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#ObjectID
-<http://www.semanticweb.org/owl/owlapi/turtle#ObjectID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#ObjectID> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#PrimaryKey> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Oracle_NoSQL_Database
-<http://www.semanticweb.org/owl/owlapi/turtle#Oracle_NoSQL_Database> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Oracle_NoSQL_Database> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#OrientDB
-<http://www.semanticweb.org/owl/owlapi/turtle#OrientDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#OrientDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
-<http://www.semanticweb.org/owl/owlapi/turtle#OrientDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
-<http://www.semanticweb.org/owl/owlapi/turtle#OrientDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
-<http://www.semanticweb.org/owl/owlapi/turtle#OrientDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Multi-model> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#PrimaryKey
-<http://www.semanticweb.org/owl/owlapi/turtle#PrimaryKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Primary_key
-<http://www.semanticweb.org/owl/owlapi/turtle#Primary_key> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Primary_key> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#PrimaryKey> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#QueryLanguage
-<http://www.semanticweb.org/owl/owlapi/turtle#QueryLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#QueryLanguage> <http://www.w3.org/2000/01/rdf-schema#comment> "A syntax of a query or dialect to interact with a database."@en .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#RavenDB
-<http://www.semanticweb.org/owl/owlapi/turtle#RavenDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#RavenDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Redis
-<http://www.semanticweb.org/owl/owlapi/turtle#Redis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Redis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#RethinkDB
-<http://www.semanticweb.org/owl/owlapi/turtle#RethinkDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#RethinkDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Riak
-<http://www.semanticweb.org/owl/owlapi/turtle#Riak> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Riak> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Scalaris
-<http://www.semanticweb.org/owl/owlapi/turtle#Scalaris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Scalaris> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Scylla
-<http://www.semanticweb.org/owl/owlapi/turtle#Scylla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Scylla> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#SecondaryIndex
-<http://www.semanticweb.org/owl/owlapi/turtle#SecondaryIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#SecondaryIndex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Index> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#SequoiaDB
-<http://www.semanticweb.org/owl/owlapi/turtle#SequoiaDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#SequoiaDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#SimpleDB
-<http://www.semanticweb.org/owl/owlapi/turtle#SimpleDB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#SimpleDB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Sparksee
-<http://www.semanticweb.org/owl/owlapi/turtle#Sparksee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Sparksee> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Store
-<http://www.semanticweb.org/owl/owlapi/turtle#Store> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Store> <http://www.w3.org/2000/01/rdf-schema#comment> "Only SQL, NOSQL stores are databases designed around other models than the traditional relational database. It has five categories: Key-value, document, columnar, graph and multi-model."@en .
-<http://www.semanticweb.org/owl/owlapi/turtle#Store> <http://www.w3.org/2000/01/rdf-schema#comment> "Set the type of NOSQL a certain database is."@en .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Table
-<http://www.semanticweb.org/owl/owlapi/turtle#Table> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Table> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Entity> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Tarantool
-<http://www.semanticweb.org/owl/owlapi/turtle#Tarantool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Tarantool> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Trinity
-<http://www.semanticweb.org/owl/owlapi/turtle#Trinity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Trinity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#View
-<http://www.semanticweb.org/owl/owlapi/turtle#View> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#Voldemort
-<http://www.semanticweb.org/owl/owlapi/turtle#Voldemort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#Voldemort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#c-treeACE
-<http://www.semanticweb.org/owl/owlapi/turtle#c-treeACE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#c-treeACE> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
-# 
-# http://www.semanticweb.org/owl/owlapi/turtle#upscaledb
-<http://www.semanticweb.org/owl/owlapi/turtle#upscaledb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/owl/owlapi/turtle#upscaledb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
-# 
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#resource> "http://creativecommons.org/licenses/by/3.0/" .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#about> "http://mohamednadjibmami.com/me" .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#about> "http://mohamednadjibmami.com/me" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#resource> "http://creativecommons.org/licenses/by/3.0/" .
 # Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
