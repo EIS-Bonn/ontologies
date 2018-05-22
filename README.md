@@ -5,4 +5,4 @@ Documentations will be accessed via the Github Page link of this repository: htt
 
 ## Currently hosted ontology documentations
 Currently, the documentation of the following ontologies are hosted here:
-- **NOSQL Ontology:**_ https://eis-bonn.github.io/ontologies/nosql/index-en.html (maintainer: Mohamed Nadjib Mami).
+- **NOSQL Ontology:** https://eis-bonn.github.io/ontologies/nosql/index-en.html (maintainer: Mohamed Nadjib Mami).
