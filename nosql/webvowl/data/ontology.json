@@ -8,6 +8,7 @@
     },
     "iri" : "http://purl.org/db/nosql",
     "version" : "0.1",
+    "author" : [ "http://mohamednadjibmami.com/me" ],
     "description" : {
       "undefined" : "A vocabulary about NOSQL stores, and their related concepts."
     },
@@ -20,6 +21,12 @@
         "language" : "undefined",
         "value" : "http://creativecommons.org/licenses/by-nc-sa/3.0/",
         "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://mohamednadjibmami.com/me",
+        "type" : "label"
       } ],
       "contributor" : [ {
         "identifier" : "contributor",
@@ -389,7 +396,7 @@
     "comment" : {
       "en" : "A non-relation database, is a database that is designed around other models than the relational model. Used interchangbly with NOSQL database or store."
     },
-    "attributes" : [ "external", "equivalent" ],
+    "attributes" : [ "equivalent", "external" ],
     "id" : "12"
   }, {
     "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Neo4j",
@@ -985,9 +992,9 @@
     },
     "subClasses" : [ "4", "33", "2", "15", "45" ],
     "comment" : {
-      "en" : "Set the type of NOSQL a certain database is."
+      "en" : "Only SQL, NOSQL stores are databases designed around other models than the traditional relational database. It has five categories: Key-value, document, columnar, graph and multi-model."
     },
-    "attributes" : [ "external", "equivalent" ],
+    "attributes" : [ "equivalent", "external" ],
     "id" : "13"
   }, {
     "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Trinity",
@@ -1459,7 +1466,7 @@
     "comment" : {
       "en" : "Certain NOSQL databases store data in tables."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "27"
   }, {
     "range" : "2",
@@ -1507,7 +1514,7 @@
     "comment" : {
       "en" : "Define the query language of a certain database."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "57"
   }, {
     "range" : "11",
@@ -1616,7 +1623,7 @@
     "comment" : {
       "en" : "Special to MongoDB, data is stored in collections of documents."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "91"
   }, {
     "range" : "13",
@@ -1639,7 +1646,7 @@
     "comment" : {
       "en" : "An entity in a database consists of a set of attributes."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "97"
   }, {
     "range" : "7",
@@ -1694,7 +1701,7 @@
       "IRI-based" : "hasIndex"
     },
     "domain" : "13",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "119"
   }, {
     "range" : "15",
@@ -1733,7 +1740,7 @@
     "comment" : {
       "en" : "Special to CouchDB databases, a CouchDB has a number of data buckets."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "127"
   }, {
     "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#hasPrimaryKey",
@@ -1746,7 +1753,7 @@
     "comment" : {
       "en" : "Sets the primary key of an entity of a database."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "128"
   }, {
     "range" : "15",
@@ -1806,7 +1813,7 @@
       "IRI-based" : "store"
     },
     "domain" : "143",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "142"
   }, {
     "range" : "33",
@@ -1826,7 +1833,7 @@
       "IRI-based" : "viewIn"
     },
     "domain" : "40",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "146"
   }, {
     "range" : "33",
@@ -1909,7 +1916,7 @@
     "comment" : {
       "en" : "Tell which database is compliant with which properties, like relational database with ACID properties, or NOSQL wirh BASE properties."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "162"
   }, {
     "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#hasEntity",
@@ -1923,7 +1930,7 @@
     "comment" : {
       "en" : "A database contails one or more entities."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "29"
   }, {
     "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#runsIn",
@@ -1936,7 +1943,7 @@
     "comment" : {
       "en" : "A distributed database can run in a cluster."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "163"
   }, {
     "range" : "17",

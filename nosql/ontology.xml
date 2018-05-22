@@ -13,6 +13,7 @@
         <ns:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/3.0/"/>
         <dc:contributor rdf:resource="http://mohamednadjibmami.com/me"/>
         <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-15T17:00:00</dc:created>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://mohamednadjibmami.com/me</dc:creator>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vocabulary about NOSQL stores, and their related concepts.</dc:description>
         <dc:publisher rdf:resource="http://de.dbpedia.org/resource/Fraunhofer-Gesellschaft"/>
         <dc:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/3.0/"/>
@@ -48,6 +49,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
     
 
 
@@ -927,10 +935,10 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#KeyValue"/>
     </owl:Class>
     <rdf:Description>
-        <rdf:about rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://mohamednadjibmami.com/me</rdf:about>
+        <rdf:resource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://creativecommons.org/licenses/by/3.0/</rdf:resource>
     </rdf:Description>
     <rdf:Description>
-        <rdf:resource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://creativecommons.org/licenses/by/3.0/</rdf:resource>
+        <rdf:about rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://mohamednadjibmami.com/me</rdf:about>
     </rdf:Description>
 </rdf:RDF>
 
