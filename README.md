@@ -1,2 +1,2 @@
 # EIS Ontologies Repo
-Repository hosting ontologies created withing EIS
+Repository hosting ontologies created within EIS
