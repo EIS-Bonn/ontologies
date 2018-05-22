@@ -1,0 +1,544 @@
+@prefix : <http://purl.org/db/nosql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://purl.org/db/nosql> .
+
+<http://purl.org/db/nosql> rdf:type owl:Ontology ;
+                            <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by-nc-sa/3.0/> ;
+                            <http://purl.org/dc/elements/1.1/contributor> <http://mohamednadjibmami.com/me> ;
+                            <http://purl.org/dc/elements/1.1/created> "2017-12-15T17:00:00"^^xsd:dateTime ;
+                            <http://purl.org/dc/elements/1.1/description> "A vocabulary about NOSQL stores, and their related concepts."^^xsd:string ;
+                            <http://purl.org/dc/elements/1.1/publisher> <http://de.dbpedia.org/resource/Fraunhofer-Gesellschaft> ;
+                            <http://purl.org/dc/elements/1.1/rights> <http://creativecommons.org/licenses/by-nc-sa/3.0/> ;
+                            <http://purl.org/dc/elements/1.1/title> "Vocabulary about NOSQL stores"@en ;
+                            <http://purl.org/vocab/vann/preferredNamespacePrefix> "nosql"^^xsd:string ;
+                            <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/db/nosql#"^^xsd:string ;
+                            rdfs:comment "Version 0.1: first publication"^^xsd:string ;
+                            owl:versionInfo "0.1"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#about
+rdf:about rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#resource
+rdf:resource rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#compliesWith
+<http://www.semanticweb.org/owl/owlapi/turtle#compliesWith> rdf:type owl:ObjectProperty ;
+                                                            rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Store> ;
+                                                            rdfs:range <http://purl.org/vocab/vann/Properties> ;
+                                                            rdfs:comment "Tell which database is compliant with which properties, like relational database with ACID properties, or NOSQL wirh BASE properties."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#hasAttribute
+<http://www.semanticweb.org/owl/owlapi/turtle#hasAttribute> rdf:type owl:ObjectProperty ;
+                                                            rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Entity> ;
+                                                            rdfs:range <http://www.semanticweb.org/owl/owlapi/turtle#Attribute> ;
+                                                            rdfs:comment "An entity in a database consists of a set of attributes."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#hasCollection
+<http://www.semanticweb.org/owl/owlapi/turtle#hasCollection> rdf:type owl:ObjectProperty ;
+                                                             rdfs:subPropertyOf <http://www.semanticweb.org/owl/owlapi/turtle#hasEntity> ;
+                                                             rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MongoDB> ;
+                                                             rdfs:range <http://www.semanticweb.org/owl/owlapi/turtle#Collection> ;
+                                                             rdfs:comment "Special to MongoDB, data is stored in collections of documents."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#hasData_Bucket
+<http://www.semanticweb.org/owl/owlapi/turtle#hasData_Bucket> rdf:type owl:ObjectProperty ;
+                                                              rdfs:subPropertyOf <http://www.semanticweb.org/owl/owlapi/turtle#hasEntity> ;
+                                                              rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#CouchDB> ;
+                                                              rdfs:range <http://www.semanticweb.org/owl/owlapi/turtle#Data_Bucket> ;
+                                                              rdfs:comment "Special to CouchDB databases, a CouchDB has a number of data buckets."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#hasEntity
+<http://www.semanticweb.org/owl/owlapi/turtle#hasEntity> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Store> ;
+                                                         rdfs:range <http://www.semanticweb.org/owl/owlapi/turtle#Entity> ;
+                                                         rdfs:comment "A database contails one or more entities."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#hasIndex
+<http://www.semanticweb.org/owl/owlapi/turtle#hasIndex> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Store> ;
+                                                        rdfs:range <http://www.semanticweb.org/owl/owlapi/turtle#Index> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#hasPrimaryKey
+<http://www.semanticweb.org/owl/owlapi/turtle#hasPrimaryKey> rdf:type owl:ObjectProperty ;
+                                                             rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Entity> ;
+                                                             rdfs:range <http://www.semanticweb.org/owl/owlapi/turtle#PrimaryKey> ;
+                                                             rdfs:comment "Sets the primary key of an entity of a database."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#hasTable
+<http://www.semanticweb.org/owl/owlapi/turtle#hasTable> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf <http://www.semanticweb.org/owl/owlapi/turtle#hasEntity> ;
+                                                        rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#NonRelationalDB> ;
+                                                        rdfs:range <http://www.semanticweb.org/owl/owlapi/turtle#Table> ;
+                                                        rdfs:comment "Certain NOSQL databases store data in tables."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#queriedBy
+<http://www.semanticweb.org/owl/owlapi/turtle#queriedBy> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Store> ;
+                                                         rdfs:range <http://www.semanticweb.org/owl/owlapi/turtle#QueryLanguage> ;
+                                                         rdfs:comment "Define the query language of a certain database."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#runsIn
+<http://www.semanticweb.org/owl/owlapi/turtle#runsIn> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Store> ;
+                                                      rdfs:range <http://www.semanticweb.org/owl/owlapi/turtle#Cluster> ;
+                                                      rdfs:comment "A distributed database can run in a cluster."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#store
+<http://www.semanticweb.org/owl/owlapi/turtle#store> rdf:type owl:ObjectProperty ;
+                                                     rdfs:range <http://www.semanticweb.org/owl/owlapi/turtle#Store> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#viewIn
+<http://www.semanticweb.org/owl/owlapi/turtle#viewIn> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#View> ;
+                                                      rdfs:range <http://www.semanticweb.org/owl/owlapi/turtle#Store> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/vocab/vann/N1QL
+<http://purl.org/vocab/vann/N1QL> rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#QueryLanguage> ;
+                                  rdfs:comment "Query language (SQL-like) used to interact with a Couchbase database."^^xsd:string .
+
+
+###  http://purl.org/vocab/vann/Properties
+<http://purl.org/vocab/vann/Properties> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#ACID
+<http://www.semanticweb.org/owl/owlapi/turtle#ACID> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.org/vocab/vann/Properties> ;
+                                                    owl:disjointWith <http://www.semanticweb.org/owl/owlapi/turtle#BASE> ;
+                                                    rdfs:comment "In a database, ACID are four properties: Atomicity, Consistency, Isolation, and Durability, that ensure that transactions, failed or succeded, leave the data in a valid and consistent state."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#AQL
+<http://www.semanticweb.org/owl/owlapi/turtle#AQL> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#QueryLanguage> ;
+                                                   rdfs:comment "ArangoDB Query Language, query language used to interact with an ArangoDB database."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Accumulo
+<http://www.semanticweb.org/owl/owlapi/turtle#Accumulo> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#AllegroGraph
+<http://www.semanticweb.org/owl/owlapi/turtle#AllegroGraph> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#ArangoDB
+<http://www.semanticweb.org/owl/owlapi/turtle#ArangoDB> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Document> ,
+                                                                        <http://www.semanticweb.org/owl/owlapi/turtle#Graph> ,
+                                                                        <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> ,
+                                                                        <http://www.semanticweb.org/owl/owlapi/turtle#Multi-model> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Attribute
+<http://www.semanticweb.org/owl/owlapi/turtle#Attribute> rdf:type owl:Class ;
+                                                         rdfs:comment "A term that groups all concepts used by different databases to characterize a particular datum stored in it, e.g., column in  Cassandra, field in MongoDB"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#BASE
+<http://www.semanticweb.org/owl/owlapi/turtle#BASE> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.org/vocab/vann/Properties> ;
+                                                    rdfs:comment "A set of four properties: Basically Available, Soft state, Eventual consistency, that are commonly found in distributed NOSQL stores, as apposed to ACID in relational databases. Data added might not be ready for query everywhere, but will eventually be, and hence a system state is in constant change."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Bagri
+<http://www.semanticweb.org/owl/owlapi/turtle#Bagri> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Berkeley_DB
+<http://www.semanticweb.org/owl/owlapi/turtle#Berkeley_DB> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Blazegraph
+<http://www.semanticweb.org/owl/owlapi/turtle#Blazegraph> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#CQL
+<http://www.semanticweb.org/owl/owlapi/turtle#CQL> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#QueryLanguage> ;
+                                                   rdfs:comment "Cassandra Query Language, query language (SQL-like) used to interact with a Cassandra database."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Cassandra
+<http://www.semanticweb.org/owl/owlapi/turtle#Cassandra> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Chouchbase
+<http://www.semanticweb.org/owl/owlapi/turtle#Chouchbase> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Cloud_Datastore
+<http://www.semanticweb.org/owl/owlapi/turtle#Cloud_Datastore> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Cloudant
+<http://www.semanticweb.org/owl/owlapi/turtle#Cloudant> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Cluster
+<http://www.semanticweb.org/owl/owlapi/turtle#Cluster> rdf:type owl:Class ;
+                                                       rdfs:comment "A group of physical or virtual computing machines."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Collection
+<http://www.semanticweb.org/owl/owlapi/turtle#Collection> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Entity> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Columnar
+<http://www.semanticweb.org/owl/owlapi/turtle#Columnar> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Store> ;
+                                                        rdfs:comment "Columnar or column-based store organises data virtually around rows, but stores it physically by columns. It may allow to store rows of different schema in one same table."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Cosmos_DB
+<http://www.semanticweb.org/owl/owlapi/turtle#Cosmos_DB> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> ,
+                                                                         <http://www.semanticweb.org/owl/owlapi/turtle#Document> ,
+                                                                         <http://www.semanticweb.org/owl/owlapi/turtle#Graph> ,
+                                                                         <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> ,
+                                                                         <http://www.semanticweb.org/owl/owlapi/turtle#Multi-model> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#CouchDB
+<http://www.semanticweb.org/owl/owlapi/turtle#CouchDB> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Cypher
+<http://www.semanticweb.org/owl/owlapi/turtle#Cypher> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#QueryLanguage> ;
+                                                      rdfs:comment "Query language used to intereact with a Neo4j database."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#DSE_Graph
+<http://www.semanticweb.org/owl/owlapi/turtle#DSE_Graph> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Data_Bucket
+<http://www.semanticweb.org/owl/owlapi/turtle#Data_Bucket> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Entity> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Dgraph
+<http://www.semanticweb.org/owl/owlapi/turtle#Dgraph> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Document
+<http://www.semanticweb.org/owl/owlapi/turtle#Document> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Store> ;
+                                                        rdfs:comment "Document store stores data in form of documents, like under JSOB/BSON formats."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#DocumentDB
+<http://www.semanticweb.org/owl/owlapi/turtle#DocumentDB> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#DocumentID
+<http://www.semanticweb.org/owl/owlapi/turtle#DocumentID> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#PrimaryKey> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Druid
+<http://www.semanticweb.org/owl/owlapi/turtle#Druid> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#DynamoDB
+<http://www.semanticweb.org/owl/owlapi/turtle#DynamoDB> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Elassandra
+<http://www.semanticweb.org/owl/owlapi/turtle#Elassandra> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Entity
+<http://www.semanticweb.org/owl/owlapi/turtle#Entity> rdf:type owl:Class ;
+                                                      rdfs:comment "A term that groups all concepts used by different databases to store similar data together."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#GlobalSecondaryIndex
+<http://www.semanticweb.org/owl/owlapi/turtle#GlobalSecondaryIndex> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#View> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Graph
+<http://www.semanticweb.org/owl/owlapi/turtle#Graph> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Store> ;
+                                                     rdfs:comment "Graph store stores highly interconnected data, in form of graphs."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Graph_Engine
+<http://www.semanticweb.org/owl/owlapi/turtle#Graph_Engine> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#HBase
+<http://www.semanticweb.org/owl/owlapi/turtle#HBase> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#HQL
+<http://www.semanticweb.org/owl/owlapi/turtle#HQL> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#QueryLanguage> ;
+                                                   rdfs:comment "Hypertable Query Language, query language (SQL-like) used to interact with a Hypertable database."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#HypergraphDB
+<http://www.semanticweb.org/owl/owlapi/turtle#HypergraphDB> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Hypertable
+<http://www.semanticweb.org/owl/owlapi/turtle#Hypertable> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Index
+<http://www.semanticweb.org/owl/owlapi/turtle#Index> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#InfiniteGraph
+<http://www.semanticweb.org/owl/owlapi/turtle#InfiniteGraph> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#JanusGraph
+<http://www.semanticweb.org/owl/owlapi/turtle#JanusGraph> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#KeyValue
+<http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Store> ;
+                                                        rdfs:comment "Key-value store stores data in form of long key,value maps."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Kudu
+<http://www.semanticweb.org/owl/owlapi/turtle#Kudu> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#MarkLogic
+<http://www.semanticweb.org/owl/owlapi/turtle#MarkLogic> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#MaterializedView
+<http://www.semanticweb.org/owl/owlapi/turtle#MaterializedView> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#View> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Memcached
+<http://www.semanticweb.org/owl/owlapi/turtle#Memcached> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#MonetDB
+<http://www.semanticweb.org/owl/owlapi/turtle#MonetDB> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#MongoDB
+<http://www.semanticweb.org/owl/owlapi/turtle#MongoDB> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Multi-model
+<http://www.semanticweb.org/owl/owlapi/turtle#Multi-model> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Store> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Neo4j
+<http://www.semanticweb.org/owl/owlapi/turtle#Neo4j> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#NonRelationalDB
+<http://www.semanticweb.org/owl/owlapi/turtle#NonRelationalDB> rdf:type owl:Class ;
+                                                               owl:equivalentClass <http://www.semanticweb.org/owl/owlapi/turtle#Store> ;
+                                                               rdfs:comment "A non-relation database, is a database that is designed around other models than the relational model. Used interchangbly with NOSQL database or store."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#ObjectID
+<http://www.semanticweb.org/owl/owlapi/turtle#ObjectID> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#PrimaryKey> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Oracle_NoSQL_Database
+<http://www.semanticweb.org/owl/owlapi/turtle#Oracle_NoSQL_Database> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#OrientDB
+<http://www.semanticweb.org/owl/owlapi/turtle#OrientDB> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Document> ,
+                                                                        <http://www.semanticweb.org/owl/owlapi/turtle#Graph> ,
+                                                                        <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> ,
+                                                                        <http://www.semanticweb.org/owl/owlapi/turtle#Multi-model> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#PrimaryKey
+<http://www.semanticweb.org/owl/owlapi/turtle#PrimaryKey> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Primary_key
+<http://www.semanticweb.org/owl/owlapi/turtle#Primary_key> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#PrimaryKey> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#QueryLanguage
+<http://www.semanticweb.org/owl/owlapi/turtle#QueryLanguage> rdf:type owl:Class ;
+                                                             rdfs:comment "A syntax of a query or dialect to interact with a database."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#RavenDB
+<http://www.semanticweb.org/owl/owlapi/turtle#RavenDB> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Redis
+<http://www.semanticweb.org/owl/owlapi/turtle#Redis> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#RethinkDB
+<http://www.semanticweb.org/owl/owlapi/turtle#RethinkDB> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Riak
+<http://www.semanticweb.org/owl/owlapi/turtle#Riak> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Scalaris
+<http://www.semanticweb.org/owl/owlapi/turtle#Scalaris> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Scylla
+<http://www.semanticweb.org/owl/owlapi/turtle#Scylla> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#SecondaryIndex
+<http://www.semanticweb.org/owl/owlapi/turtle#SecondaryIndex> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Index> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#SequoiaDB
+<http://www.semanticweb.org/owl/owlapi/turtle#SequoiaDB> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Document> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#SimpleDB
+<http://www.semanticweb.org/owl/owlapi/turtle#SimpleDB> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Columnar> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Sparksee
+<http://www.semanticweb.org/owl/owlapi/turtle#Sparksee> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Store
+<http://www.semanticweb.org/owl/owlapi/turtle#Store> rdf:type owl:Class ;
+                                                     rdfs:comment "Only SQL, NOSQL stores are databases designed around other models than the traditional relational database. It has five categories: Key-value, document, columnar, graph and multi-model."@en ,
+                                                                  "Set the type of NOSQL a certain database is."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Table
+<http://www.semanticweb.org/owl/owlapi/turtle#Table> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Entity> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Tarantool
+<http://www.semanticweb.org/owl/owlapi/turtle#Tarantool> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Trinity
+<http://www.semanticweb.org/owl/owlapi/turtle#Trinity> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#Graph> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#View
+<http://www.semanticweb.org/owl/owlapi/turtle#View> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Voldemort
+<http://www.semanticweb.org/owl/owlapi/turtle#Voldemort> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#c-treeACE
+<http://www.semanticweb.org/owl/owlapi/turtle#c-treeACE> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#upscaledb
+<http://www.semanticweb.org/owl/owlapi/turtle#upscaledb> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.semanticweb.org/owl/owlapi/turtle#KeyValue> .
+
+
+[ rdf:about "http://mohamednadjibmami.com/me"^^xsd:string
+] .
+
+[ rdf:resource "http://creativecommons.org/licenses/by/3.0/"^^xsd:string
+ ] .
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
