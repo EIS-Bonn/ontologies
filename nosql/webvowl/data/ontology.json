@@ -2,7 +2,7 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "undefined" ],
-    "baseIris" : [ "http://purl.org/vocab/vann", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/db/nosql", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/db/nosql", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
     "title" : {
       "en" : "Vocabulary about NOSQL stores"
     },
@@ -34,17 +34,17 @@
         "value" : "2017-12-15T17:00:00",
         "type" : "label"
       } ],
-      "preferredNamespacePrefix" : [ {
-        "identifier" : "preferredNamespacePrefix",
-        "language" : "undefined",
-        "value" : "nosql",
-        "type" : "label"
-      } ],
       "rights" : [ {
         "identifier" : "rights",
         "language" : "undefined",
         "value" : "http://creativecommons.org/licenses/by-nc-sa/3.0/",
         "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "nosql",
+        "type" : "label"
       } ],
       "publisher" : [ {
         "identifier" : "publisher",
@@ -52,16 +52,16 @@
         "value" : "http://de.dbpedia.org/resource/Fraunhofer-Gesellschaft",
         "type" : "iri"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "0.1",
-        "type" : "label"
-      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "http://purl.org/db/nosql#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
         "type" : "label"
       } ],
       "title" : [ {
@@ -146,37 +146,34 @@
     "id" : "48",
     "type" : "owl:Class"
   }, {
-    "id" : "79",
-    "type" : "owl:Class"
-  }, {
     "id" : "81",
     "type" : "owl:Class"
   }, {
-    "id" : "27",
+    "id" : "83",
     "type" : "owl:Class"
   }, {
     "id" : "9",
     "type" : "owl:Class"
   }, {
-    "id" : "92",
+    "id" : "90",
     "type" : "owl:Class"
   }, {
     "id" : "51",
     "type" : "owl:Class"
   }, {
-    "id" : "96",
+    "id" : "94",
     "type" : "owl:equivalentClass"
   }, {
     "id" : "46",
     "type" : "owl:Class"
   }, {
-    "id" : "108",
+    "id" : "106",
     "type" : "owl:Class"
   }, {
-    "id" : "66",
+    "id" : "60",
     "type" : "owl:Class"
   }, {
-    "id" : "111",
+    "id" : "109",
     "type" : "owl:Class"
   }, {
     "id" : "52",
@@ -185,10 +182,7 @@
     "id" : "26",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "60",
-    "type" : "owl:Class"
-  }, {
-    "id" : "118",
+    "id" : "116",
     "type" : "owl:Class"
   }, {
     "id" : "1",
@@ -197,7 +191,7 @@
     "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "129",
+    "id" : "127",
     "type" : "owl:Class"
   }, {
     "id" : "16",
@@ -212,13 +206,13 @@
     "id" : "22",
     "type" : "owl:Class"
   }, {
-    "id" : "89",
+    "id" : "87",
     "type" : "owl:Class"
   }, {
-    "id" : "132",
+    "id" : "130",
     "type" : "owl:Class"
   }, {
-    "id" : "94",
+    "id" : "92",
     "type" : "owl:Class"
   }, {
     "id" : "58",
@@ -236,13 +230,13 @@
     "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "83",
+    "id" : "140",
     "type" : "owl:Class"
   }, {
     "id" : "41",
     "type" : "owl:Class"
   }, {
-    "id" : "138",
+    "id" : "144",
     "type" : "owl:Class"
   }, {
     "id" : "85",
@@ -254,28 +248,31 @@
     "id" : "38",
     "type" : "owl:Class"
   }, {
-    "id" : "87",
+    "id" : "78",
     "type" : "owl:Class"
   }, {
-    "id" : "88",
+    "id" : "86",
     "type" : "owl:Class"
   }, {
     "id" : "40",
     "type" : "owl:Class"
   }, {
-    "id" : "90",
+    "id" : "88",
     "type" : "owl:Class"
   }, {
-    "id" : "136",
+    "id" : "134",
     "type" : "owl:Thing"
   }, {
     "id" : "55",
     "type" : "owl:Class"
   }, {
-    "id" : "82",
+    "id" : "84",
     "type" : "owl:Class"
   }, {
-    "id" : "84",
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "138",
     "type" : "owl:Class"
   }, {
     "id" : "53",
@@ -287,7 +284,10 @@
     "id" : "57",
     "type" : "owl:Class"
   }, {
-    "id" : "127",
+    "id" : "125",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
     "type" : "owl:Class"
   }, {
     "id" : "49",
@@ -296,22 +296,22 @@
     "id" : "76",
     "type" : "owl:Class"
   }, {
-    "id" : "68",
+    "id" : "66",
     "type" : "owl:Class"
   }, {
-    "id" : "86",
+    "id" : "80",
     "type" : "owl:Class"
   }, {
     "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "128",
+    "id" : "126",
     "type" : "owl:Class"
   }, {
-    "id" : "91",
+    "id" : "89",
     "type" : "owl:Class"
   }, {
-    "id" : "131",
+    "id" : "129",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -530,7 +530,7 @@
     "label" : {
       "IRI-based" : "Collection"
     },
-    "id" : "79",
+    "id" : "81",
     "superClasses" : [ "12" ]
   }, {
     "iri" : "http://purl.org/db/nosql#MaterializedView",
@@ -539,18 +539,8 @@
     "label" : {
       "IRI-based" : "MaterializedView"
     },
-    "id" : "81",
-    "superClasses" : [ "82" ]
-  }, {
-    "iri" : "http://purl.org/vocab/vann/Properties",
-    "baseIri" : "http://purl.org/vocab/vann",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Properties"
-    },
-    "subClasses" : [ "83", "84" ],
-    "attributes" : [ "external" ],
-    "id" : "27"
+    "id" : "83",
+    "superClasses" : [ "84" ]
   }, {
     "iri" : "http://purl.org/db/nosql#KeyValue",
     "baseIri" : "http://purl.org/db/nosql",
@@ -558,7 +548,7 @@
     "label" : {
       "IRI-based" : "KeyValue"
     },
-    "subClasses" : [ "85", "37", "35", "32", "86", "87", "88", "8", "10", "89", "20", "90", "91", "30" ],
+    "subClasses" : [ "85", "37", "35", "32", "80", "78", "86", "8", "10", "87", "20", "88", "89", "30" ],
     "comment" : {
       "en" : "Key-value store stores data in form of long key,value maps."
     },
@@ -574,7 +564,7 @@
     "comment" : {
       "en" : "A term that groups all concepts used by different databases to characterize a particular datum stored in it, e.g., column in  Cassandra, field in MongoDB"
     },
-    "id" : "92"
+    "id" : "90"
   }, {
     "iri" : "http://purl.org/db/nosql#Dgraph",
     "baseIri" : "http://purl.org/db/nosql",
@@ -596,7 +586,7 @@
       "en" : "A non-relation database, is a database that is designed around other models than the relational model. Used interchangbly with NOSQL database or store."
     },
     "attributes" : [ "equivalent" ],
-    "id" : "96"
+    "id" : "94"
   }, {
     "iri" : "http://purl.org/db/nosql#HypergraphDB",
     "baseIri" : "http://purl.org/db/nosql",
@@ -613,7 +603,7 @@
     "label" : {
       "IRI-based" : "Hypertable"
     },
-    "id" : "108",
+    "id" : "106",
     "superClasses" : [ "1" ]
   }, {
     "iri" : "http://purl.org/db/nosql#CQL",
@@ -625,7 +615,7 @@
     "comment" : {
       "en" : "Cassandra Query Language, query language (SQL-like) used to interact with a Cassandra database."
     },
-    "id" : "66",
+    "id" : "60",
     "superClasses" : [ "22" ]
   }, {
     "iri" : "http://purl.org/db/nosql#SimpleDB",
@@ -634,7 +624,7 @@
     "label" : {
       "IRI-based" : "SimpleDB"
     },
-    "id" : "111",
+    "id" : "109",
     "superClasses" : [ "1" ]
   }, {
     "iri" : "http://purl.org/db/nosql#Trinity",
@@ -647,7 +637,7 @@
     "superClasses" : [ "14" ]
   }, {
     "iri" : "http://purl.org/db/nosql#Store",
-    "equivalent" : [ "96" ],
+    "equivalent" : [ "94" ],
     "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
@@ -660,27 +650,14 @@
     "attributes" : [ "equivalent" ],
     "id" : "26"
   }, {
-    "iri" : "http://purl.org/vocab/vann/N1QL",
-    "baseIri" : "http://purl.org/vocab/vann",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "N1QL"
-    },
-    "comment" : {
-      "undefined" : "Query language (SQL-like) used to interact with a Couchbase database."
-    },
-    "attributes" : [ "external" ],
-    "id" : "60",
-    "superClasses" : [ "22" ]
-  }, {
     "iri" : "http://purl.org/db/nosql#GlobalSecondaryIndex",
     "baseIri" : "http://purl.org/db/nosql",
     "instances" : 0,
     "label" : {
       "IRI-based" : "GlobalSecondaryIndex"
     },
-    "id" : "118",
-    "superClasses" : [ "82" ]
+    "id" : "116",
+    "superClasses" : [ "84" ]
   }, {
     "iri" : "http://purl.org/db/nosql#Columnar",
     "baseIri" : "http://purl.org/db/nosql",
@@ -688,7 +665,7 @@
     "label" : {
       "IRI-based" : "Columnar"
     },
-    "subClasses" : [ "0", "111", "108", "127", "128", "32", "129", "6", "7", "71", "73" ],
+    "subClasses" : [ "0", "109", "106", "125", "126", "32", "127", "6", "7", "71", "73" ],
     "comment" : {
       "en" : "Columnar or column-based store organises data virtually around rows, but stores it physically by columns. It may allow to store rows of different schema in one same table."
     },
@@ -710,7 +687,7 @@
     "label" : {
       "IRI-based" : "Kudu"
     },
-    "id" : "129",
+    "id" : "127",
     "superClasses" : [ "1" ]
   }, {
     "iri" : "http://purl.org/db/nosql#RavenDB",
@@ -761,7 +738,7 @@
     "label" : {
       "IRI-based" : "Scalaris"
     },
-    "id" : "89",
+    "id" : "87",
     "superClasses" : [ "9" ]
   }, {
     "iri" : "http://purl.org/db/nosql#ObjectID",
@@ -770,7 +747,7 @@
     "label" : {
       "IRI-based" : "ObjectID"
     },
-    "id" : "132",
+    "id" : "130",
     "superClasses" : [ "55" ]
   }, {
     "iri" : "http://purl.org/db/nosql#Data_Bucket",
@@ -779,7 +756,7 @@
     "label" : {
       "IRI-based" : "Data_Bucket"
     },
-    "id" : "94",
+    "id" : "92",
     "superClasses" : [ "12" ]
   }, {
     "iri" : "http://purl.org/db/nosql#Index",
@@ -836,7 +813,7 @@
     "comment" : {
       "en" : "In a database, ACID are four properties: Atomicity, Consistency, Isolation, and Durability, that ensure that transactions, failed or succeded, leave the data in a valid and consistent state."
     },
-    "id" : "83",
+    "id" : "140",
     "superClasses" : [ "27" ]
   }, {
     "iri" : "http://purl.org/db/nosql#Cloudant",
@@ -854,7 +831,7 @@
     "label" : {
       "IRI-based" : "DocumentID"
     },
-    "id" : "138",
+    "id" : "144",
     "superClasses" : [ "55" ]
   }, {
     "iri" : "http://purl.org/db/nosql#Voldemort",
@@ -890,7 +867,7 @@
     "label" : {
       "IRI-based" : "Oracle_NoSQL_Database"
     },
-    "id" : "87",
+    "id" : "78",
     "superClasses" : [ "9" ]
   }, {
     "iri" : "http://purl.org/db/nosql#Memcached",
@@ -899,7 +876,7 @@
     "label" : {
       "IRI-based" : "Memcached"
     },
-    "id" : "88",
+    "id" : "86",
     "superClasses" : [ "9" ]
   }, {
     "iri" : "http://purl.org/db/nosql#DocumentDB",
@@ -917,12 +894,12 @@
     "label" : {
       "IRI-based" : "Riak"
     },
-    "id" : "90",
+    "id" : "88",
     "superClasses" : [ "9" ]
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "136",
+    "id" : "134",
     "label" : {
       "undefined" : "Thing"
     }
@@ -933,7 +910,7 @@
     "label" : {
       "IRI-based" : "PrimaryKey"
     },
-    "subClasses" : [ "132", "54", "138" ],
+    "subClasses" : [ "130", "54", "144" ],
     "id" : "55"
   }, {
     "iri" : "http://purl.org/db/nosql#View",
@@ -942,8 +919,17 @@
     "label" : {
       "IRI-based" : "View"
     },
-    "subClasses" : [ "118", "81" ],
-    "id" : "82"
+    "subClasses" : [ "116", "83" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://purl.org/db/nosql#Properties",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Properties"
+    },
+    "subClasses" : [ "140", "138" ],
+    "id" : "27"
   }, {
     "iri" : "http://purl.org/db/nosql#BASE",
     "baseIri" : "http://purl.org/db/nosql",
@@ -954,7 +940,7 @@
     "comment" : {
       "en" : "A set of four properties: Basically Available, Soft state, Eventual consistency, that are commonly found in distributed NOSQL stores, as apposed to ACID in relational databases. Data added might not be ready for query everywhere, but will eventually be, and hence a system state is in constant change."
     },
-    "id" : "84",
+    "id" : "138",
     "superClasses" : [ "27" ]
   }, {
     "iri" : "http://purl.org/db/nosql#Sparksee",
@@ -990,8 +976,20 @@
     "label" : {
       "IRI-based" : "Accumulo"
     },
-    "id" : "127",
+    "id" : "125",
     "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/db/nosql#N1QL",
+    "baseIri" : "http://purl.org/db/nosql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "N1QL"
+    },
+    "comment" : {
+      "undefined" : "Query language (SQL-like) used to interact with a Couchbase database."
+    },
+    "id" : "68",
+    "superClasses" : [ "22" ]
   }, {
     "iri" : "http://purl.org/db/nosql#Blazegraph",
     "baseIri" : "http://purl.org/db/nosql",
@@ -1021,7 +1019,7 @@
     "comment" : {
       "en" : "ArangoDB Query Language, query language used to interact with an ArangoDB database."
     },
-    "id" : "68",
+    "id" : "66",
     "superClasses" : [ "22" ]
   }, {
     "iri" : "http://purl.org/db/nosql#upscaledb",
@@ -1030,7 +1028,7 @@
     "label" : {
       "IRI-based" : "upscaledb"
     },
-    "id" : "86",
+    "id" : "80",
     "superClasses" : [ "9" ]
   }, {
     "iri" : "http://purl.org/db/nosql#Entity",
@@ -1039,7 +1037,7 @@
     "label" : {
       "IRI-based" : "Entity"
     },
-    "subClasses" : [ "11", "94", "79" ],
+    "subClasses" : [ "11", "92", "81" ],
     "comment" : {
       "en" : "A term that groups all concepts used by different databases to store similar data together."
     },
@@ -1051,7 +1049,7 @@
     "label" : {
       "IRI-based" : "Cassandra"
     },
-    "id" : "128",
+    "id" : "126",
     "superClasses" : [ "1" ]
   }, {
     "iri" : "http://purl.org/db/nosql#Redis",
@@ -1060,7 +1058,7 @@
     "label" : {
       "IRI-based" : "Redis"
     },
-    "id" : "91",
+    "id" : "89",
     "superClasses" : [ "9" ]
   }, {
     "iri" : "http://purl.org/db/nosql#Cluster",
@@ -1072,7 +1070,7 @@
     "comment" : {
       "en" : "A group of physical or virtual computing machines."
     },
-    "id" : "131"
+    "id" : "129"
   } ],
   "property" : [ {
     "id" : "2",
@@ -1150,14 +1148,20 @@
     "id" : "77",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "78",
+    "id" : "79",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "80",
+    "id" : "82",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "93",
+    "id" : "91",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "97",
     "type" : "rdfs:SubClassOf"
@@ -1177,23 +1181,23 @@
     "id" : "102",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "103",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "104",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "95",
+    "id" : "93",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "107",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "109",
-    "type" : "rdfs:SubClassOf"
+    "id" : "108",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "110",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "112",
     "type" : "rdfs:SubClassOf"
@@ -1207,10 +1211,10 @@
     "id" : "115",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "116",
+    "id" : "117",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "117",
+    "id" : "118",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "119",
@@ -1231,31 +1235,28 @@
     "id" : "124",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "125",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "126",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "130",
+    "id" : "128",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "133",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "134",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "135",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "137",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "139",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "140",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "141",
@@ -1265,9 +1266,6 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "143",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "144",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "145",
@@ -1324,10 +1322,10 @@
     "id" : "162",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "105",
+    "id" : "103",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "106",
+    "id" : "104",
     "type" : "owl:objectProperty"
   }, {
     "id" : "163",
@@ -1478,19 +1476,19 @@
     "id" : "74"
   }, {
     "range" : "9",
-    "domain" : "37",
+    "domain" : "32",
     "attributes" : [ "anonymous", "object" ],
     "id" : "75"
   }, {
     "range" : "9",
-    "domain" : "32",
+    "domain" : "78",
     "attributes" : [ "anonymous", "object" ],
     "id" : "77"
   }, {
     "range" : "9",
-    "domain" : "35",
+    "domain" : "80",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "78"
+    "id" : "79"
   }, {
     "iri" : "http://purl.org/db/nosql#hasIndex",
     "baseIri" : "http://purl.org/db/nosql",
@@ -1500,61 +1498,61 @@
     },
     "domain" : "26",
     "attributes" : [ "object" ],
-    "id" : "80"
+    "id" : "82"
   }, {
     "iri" : "http://purl.org/db/nosql#hasData_Bucket",
     "baseIri" : "http://purl.org/db/nosql",
-    "range" : "94",
+    "range" : "92",
     "label" : {
       "IRI-based" : "hasData_Bucket"
     },
-    "superproperty" : [ "95" ],
+    "superproperty" : [ "93" ],
     "domain" : "3",
     "comment" : {
       "en" : "Special to CouchDB databases, a CouchDB has a number of data buckets."
     },
     "attributes" : [ "object" ],
-    "id" : "93"
-  }, {
-    "range" : "27",
-    "domain" : "83",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "97"
-  }, {
-    "range" : "14",
-    "domain" : "53",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "98"
+    "id" : "91"
   }, {
     "range" : "9",
     "domain" : "85",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "99"
+    "id" : "95"
   }, {
-    "range" : "27",
-    "domain" : "84",
+    "range" : "14",
+    "domain" : "53",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "100"
+    "id" : "96"
+  }, {
+    "range" : "9",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "97"
+  }, {
+    "range" : "9",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "98"
   }, {
     "range" : "14",
     "domain" : "13",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "101"
+    "id" : "99"
   }, {
     "range" : "14",
     "domain" : "51",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "102"
+    "id" : "100"
   }, {
     "range" : "14",
     "domain" : "19",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "103"
+    "id" : "101"
   }, {
     "range" : "14",
     "domain" : "52",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "104"
+    "id" : "102"
   }, {
     "iri" : "http://purl.org/db/nosql#hasEntity",
     "baseIri" : "http://purl.org/db/nosql",
@@ -1563,22 +1561,22 @@
       "IRI-based" : "hasEntity"
     },
     "domain" : "26",
-    "subproperty" : [ "105", "93", "106" ],
+    "subproperty" : [ "103", "91", "104" ],
     "comment" : {
       "en" : "A database contails one or more entities."
     },
     "attributes" : [ "object" ],
-    "id" : "95"
+    "id" : "93"
   }, {
     "range" : "14",
     "domain" : "50",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "107"
+    "id" : "105"
   }, {
     "range" : "14",
     "domain" : "49",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "109"
+    "id" : "107"
   }, {
     "iri" : "http://purl.org/db/nosql#queriedBy",
     "baseIri" : "http://purl.org/db/nosql",
@@ -1591,81 +1589,81 @@
       "en" : "Define the query language of a certain database."
     },
     "attributes" : [ "object" ],
-    "id" : "110"
+    "id" : "108"
   }, {
     "range" : "14",
     "domain" : "32",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "112"
+    "id" : "110"
   }, {
     "range" : "14",
     "domain" : "47",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "113"
+    "id" : "111"
   }, {
     "range" : "14",
     "domain" : "46",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "114"
+    "id" : "112"
   }, {
     "range" : "14",
     "domain" : "48",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "115"
+    "id" : "113"
   }, {
     "range" : "14",
     "domain" : "35",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "116"
+    "id" : "114"
   }, {
     "range" : "4",
     "domain" : "41",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "117"
+    "id" : "115"
   }, {
     "range" : "4",
     "domain" : "40",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "119"
+    "id" : "117"
   }, {
     "range" : "14",
     "domain" : "45",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "120"
+    "id" : "118"
   }, {
     "range" : "14",
     "domain" : "37",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "121"
+    "id" : "119"
   }, {
     "range" : "12",
-    "domain" : "94",
+    "domain" : "92",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "122"
+    "id" : "120"
   }, {
     "range" : "12",
     "domain" : "11",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "123"
+    "id" : "121"
   }, {
     "range" : "26",
     "domain" : "14",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "124"
+    "id" : "122"
   }, {
     "range" : "12",
-    "domain" : "79",
+    "domain" : "81",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "125"
+    "id" : "123"
   }, {
     "range" : "76",
     "domain" : "32",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "126"
+    "id" : "124"
   }, {
     "iri" : "http://purl.org/db/nosql#runsIn",
     "baseIri" : "http://purl.org/db/nosql",
-    "range" : "131",
+    "range" : "129",
     "label" : {
       "IRI-based" : "runsIn"
     },
@@ -1674,17 +1672,17 @@
       "en" : "A distributed database can run in a cluster."
     },
     "attributes" : [ "object" ],
-    "id" : "130"
+    "id" : "128"
   }, {
     "range" : "76",
     "domain" : "35",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "133"
+    "id" : "131"
   }, {
     "range" : "76",
     "domain" : "37",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "134"
+    "id" : "132"
   }, {
     "iri" : "http://purl.org/db/nosql#store",
     "baseIri" : "http://purl.org/db/nosql",
@@ -1692,67 +1690,67 @@
     "label" : {
       "IRI-based" : "store"
     },
-    "domain" : "136",
+    "domain" : "134",
     "attributes" : [ "object" ],
+    "id" : "133"
+  }, {
+    "range" : "84",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "135"
   }, {
-    "range" : "55",
+    "range" : "84",
+    "domain" : "116",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "range" : "27",
     "domain" : "138",
     "attributes" : [ "anonymous", "object" ],
     "id" : "137"
   }, {
-    "range" : "55",
-    "domain" : "54",
+    "range" : "27",
+    "domain" : "140",
     "attributes" : [ "anonymous", "object" ],
     "id" : "139"
   }, {
-    "range" : "82",
-    "domain" : "81",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "140"
-  }, {
-    "range" : "82",
-    "domain" : "118",
+    "range" : "55",
+    "domain" : "130",
     "attributes" : [ "anonymous", "object" ],
     "id" : "141"
   }, {
     "range" : "9",
-    "domain" : "91",
+    "domain" : "30",
     "attributes" : [ "anonymous", "object" ],
     "id" : "142"
   }, {
-    "range" : "9",
-    "domain" : "90",
+    "range" : "55",
+    "domain" : "144",
     "attributes" : [ "anonymous", "object" ],
     "id" : "143"
   }, {
     "range" : "55",
-    "domain" : "132",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "144"
-  }, {
-    "range" : "9",
-    "domain" : "30",
+    "domain" : "54",
     "attributes" : [ "anonymous", "object" ],
     "id" : "145"
   }, {
     "range" : "9",
-    "domain" : "89",
+    "domain" : "88",
     "attributes" : [ "anonymous", "object" ],
     "id" : "146"
   }, {
     "range" : "9",
-    "domain" : "10",
+    "domain" : "20",
     "attributes" : [ "anonymous", "object" ],
     "id" : "147"
   }, {
     "range" : "9",
-    "domain" : "20",
+    "domain" : "89",
     "attributes" : [ "anonymous", "object" ],
     "id" : "148"
   }, {
     "range" : "9",
-    "domain" : "87",
+    "domain" : "8",
     "attributes" : [ "anonymous", "object" ],
     "id" : "149"
   }, {
@@ -1762,12 +1760,12 @@
     "id" : "150"
   }, {
     "range" : "9",
-    "domain" : "8",
+    "domain" : "87",
     "attributes" : [ "anonymous", "object" ],
     "id" : "151"
   }, {
     "range" : "9",
-    "domain" : "88",
+    "domain" : "10",
     "attributes" : [ "anonymous", "object" ],
     "id" : "152"
   }, {
@@ -1777,22 +1775,22 @@
     "id" : "153"
   }, {
     "range" : "1",
-    "domain" : "111",
+    "domain" : "109",
     "attributes" : [ "anonymous", "object" ],
     "id" : "154"
   }, {
     "range" : "1",
-    "domain" : "108",
+    "domain" : "106",
     "attributes" : [ "anonymous", "object" ],
     "id" : "155"
   }, {
     "range" : "1",
-    "domain" : "127",
+    "domain" : "125",
     "attributes" : [ "anonymous", "object" ],
     "id" : "156"
   }, {
     "range" : "1",
-    "domain" : "128",
+    "domain" : "126",
     "attributes" : [ "anonymous", "object" ],
     "id" : "157"
   }, {
@@ -1802,7 +1800,7 @@
     "id" : "158"
   }, {
     "range" : "1",
-    "domain" : "129",
+    "domain" : "127",
     "attributes" : [ "anonymous", "object" ],
     "id" : "159"
   }, {
@@ -1811,14 +1809,14 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "160"
   }, {
-    "range" : "84",
-    "domain" : "83",
+    "range" : "138",
+    "domain" : "140",
     "attributes" : [ "anonymous", "object" ],
     "id" : "161"
   }, {
     "iri" : "http://purl.org/db/nosql#hasAttribute",
     "baseIri" : "http://purl.org/db/nosql",
-    "range" : "92",
+    "range" : "90",
     "label" : {
       "IRI-based" : "hasAttribute"
     },
@@ -1835,27 +1833,27 @@
     "label" : {
       "IRI-based" : "hasTable"
     },
-    "superproperty" : [ "95" ],
-    "domain" : "96",
+    "superproperty" : [ "93" ],
+    "domain" : "94",
     "comment" : {
       "en" : "Certain NOSQL databases store data in tables."
     },
     "attributes" : [ "object" ],
-    "id" : "105"
+    "id" : "103"
   }, {
     "iri" : "http://purl.org/db/nosql#hasCollection",
     "baseIri" : "http://purl.org/db/nosql",
-    "range" : "79",
+    "range" : "81",
     "label" : {
       "IRI-based" : "hasCollection"
     },
-    "superproperty" : [ "95" ],
+    "superproperty" : [ "93" ],
     "domain" : "18",
     "comment" : {
       "en" : "Special to MongoDB, data is stored in collections of documents."
     },
     "attributes" : [ "object" ],
-    "id" : "106"
+    "id" : "104"
   }, {
     "iri" : "http://purl.org/db/nosql#viewIn",
     "baseIri" : "http://purl.org/db/nosql",
@@ -1863,7 +1861,7 @@
     "label" : {
       "IRI-based" : "viewIn"
     },
-    "domain" : "82",
+    "domain" : "84",
     "attributes" : [ "object" ],
     "id" : "163"
   }, {

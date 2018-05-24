@@ -46,7 +46,7 @@
 # http://purl.org/db/nosql#compliesWith
 <http://purl.org/db/nosql#compliesWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/db/nosql#compliesWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/db/nosql#Store> .
-<http://purl.org/db/nosql#compliesWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/vann/Properties> .
+<http://purl.org/db/nosql#compliesWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/db/nosql#Properties> .
 <http://purl.org/db/nosql#compliesWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Tell which database is compliant with which properties, like relational database with ACID properties, or NOSQL wirh BASE properties."@en .
 # 
 # http://purl.org/db/nosql#hasAttribute
@@ -125,7 +125,7 @@
 # 
 # http://purl.org/db/nosql#ACID
 <http://purl.org/db/nosql#ACID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/db/nosql#ACID> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/vann/Properties> .
+<http://purl.org/db/nosql#ACID> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Properties> .
 <http://purl.org/db/nosql#ACID> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/db/nosql#BASE> .
 <http://purl.org/db/nosql#ACID> <http://www.w3.org/2000/01/rdf-schema#comment> "In a database, ACID are four properties: Atomicity, Consistency, Isolation, and Durability, that ensure that transactions, failed or succeded, leave the data in a valid and consistent state."@en .
 # 
@@ -155,7 +155,7 @@
 # 
 # http://purl.org/db/nosql#BASE
 <http://purl.org/db/nosql#BASE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/db/nosql#BASE> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/vann/Properties> .
+<http://purl.org/db/nosql#BASE> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Properties> .
 <http://purl.org/db/nosql#BASE> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of four properties: Basically Available, Soft state, Eventual consistency, that are commonly found in distributed NOSQL stores, as apposed to ACID in relational databases. Data added might not be ready for query everywhere, but will eventually be, and hence a system state is in constant change."@en .
 # 
 # http://purl.org/db/nosql#Bagri
@@ -336,6 +336,11 @@
 <http://purl.org/db/nosql#Multi-model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/db/nosql#Multi-model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Store> .
 # 
+# http://purl.org/db/nosql#N1QL
+<http://purl.org/db/nosql#N1QL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/db/nosql#N1QL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#QueryLanguage> .
+<http://purl.org/db/nosql#N1QL> <http://www.w3.org/2000/01/rdf-schema#comment> "Query language (SQL-like) used to interact with a Couchbase database." .
+# 
 # http://purl.org/db/nosql#Neo4j
 <http://purl.org/db/nosql#Neo4j> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/db/nosql#Neo4j> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#Graph> .
@@ -366,6 +371,9 @@
 # http://purl.org/db/nosql#Primary_key
 <http://purl.org/db/nosql#Primary_key> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/db/nosql#Primary_key> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#PrimaryKey> .
+# 
+# http://purl.org/db/nosql#Properties
+<http://purl.org/db/nosql#Properties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://purl.org/db/nosql#QueryLanguage
 <http://purl.org/db/nosql#QueryLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -443,14 +451,6 @@
 <http://purl.org/db/nosql#upscaledb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/db/nosql#upscaledb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#KeyValue> .
 # 
-# http://purl.org/vocab/vann/N1QL
-<http://purl.org/vocab/vann/N1QL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/vocab/vann/N1QL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/db/nosql#QueryLanguage> .
-<http://purl.org/vocab/vann/N1QL> <http://www.w3.org/2000/01/rdf-schema#comment> "Query language (SQL-like) used to interact with a Couchbase database." .
-# 
-# http://purl.org/vocab/vann/Properties
-<http://purl.org/vocab/vann/Properties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#about> "http://mohamednadjibmami.com/me" .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#resource> "http://creativecommons.org/licenses/by/3.0/" .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#resource> "http://creativecommons.org/licenses/by/3.0/" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#about> "http://mohamednadjibmami.com/me" .
 # Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

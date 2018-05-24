@@ -89,7 +89,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/db/nosql#compliesWith">
         <rdfs:domain rdf:resource="http://purl.org/db/nosql#Store"/>
-        <rdfs:range rdf:resource="http://purl.org/vocab/vann/Properties"/>
+        <rdfs:range rdf:resource="http://purl.org/db/nosql#Properties"/>
         <rdfs:comment xml:lang="en">Tell which database is compliant with which properties, like relational database with ACID properties, or NOSQL wirh BASE properties.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -231,7 +231,7 @@
 
 
     <owl:Class rdf:about="http://purl.org/db/nosql#ACID">
-        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/vann/Properties"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/db/nosql#Properties"/>
         <owl:disjointWith rdf:resource="http://purl.org/db/nosql#BASE"/>
         <rdfs:comment xml:lang="en">In a database, ACID are four properties: Atomicity, Consistency, Isolation, and Durability, that ensure that transactions, failed or succeded, leave the data in a valid and consistent state.</rdfs:comment>
     </owl:Class>
@@ -291,7 +291,7 @@
 
 
     <owl:Class rdf:about="http://purl.org/db/nosql#BASE">
-        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/vann/Properties"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/db/nosql#Properties"/>
         <rdfs:comment xml:lang="en">A set of four properties: Basically Available, Soft state, Eventual consistency, that are commonly found in distributed NOSQL stores, as apposed to ACID in relational databases. Data added might not be ready for query everywhere, but will eventually be, and hence a system state is in constant change.</rdfs:comment>
     </owl:Class>
     
@@ -684,6 +684,16 @@
     
 
 
+    <!-- http://purl.org/db/nosql#N1QL -->
+
+
+    <owl:Class rdf:about="http://purl.org/db/nosql#N1QL">
+        <rdfs:subClassOf rdf:resource="http://purl.org/db/nosql#QueryLanguage"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Query language (SQL-like) used to interact with a Couchbase database.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/db/nosql#Neo4j -->
 
 
@@ -746,6 +756,13 @@
     <owl:Class rdf:about="http://purl.org/db/nosql#Primary_key">
         <rdfs:subClassOf rdf:resource="http://purl.org/db/nosql#PrimaryKey"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/db/nosql#Properties -->
+
+
+    <owl:Class rdf:about="http://purl.org/db/nosql#Properties"/>
     
 
 
@@ -916,28 +933,11 @@
     <owl:Class rdf:about="http://purl.org/db/nosql#upscaledb">
         <rdfs:subClassOf rdf:resource="http://purl.org/db/nosql#KeyValue"/>
     </owl:Class>
-    
-
-
-    <!-- http://purl.org/vocab/vann/N1QL -->
-
-
-    <owl:Class rdf:about="http://purl.org/vocab/vann/N1QL">
-        <rdfs:subClassOf rdf:resource="http://purl.org/db/nosql#QueryLanguage"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Query language (SQL-like) used to interact with a Couchbase database.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/vocab/vann/Properties -->
-
-
-    <owl:Class rdf:about="http://purl.org/vocab/vann/Properties"/>
-    <rdf:Description>
-        <rdf:about rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://mohamednadjibmami.com/me</rdf:about>
-    </rdf:Description>
     <rdf:Description>
         <rdf:resource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://creativecommons.org/licenses/by/3.0/</rdf:resource>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:about rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://mohamednadjibmami.com/me</rdf:about>
     </rdf:Description>
 </rdf:RDF>
 
